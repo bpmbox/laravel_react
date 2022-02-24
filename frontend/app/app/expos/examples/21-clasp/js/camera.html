@@ -1,0 +1,103 @@
+<script>
+    var video = document.getElementById('video');
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var localMediaStream = null;
+
+    //繧ｫ繝｡繝ｩ菴ｿ縺医ｋ縺九メ繧ｧ繝�け
+    var hasGetUserMedia = function () {
+        return (navigator.getUserMedia || navigator.webkitGetUserMedia ||
+            navigator.mozGetUserMedia || navigator.msGetUserMedia);
+    }
+
+    //繧ｨ繝ｩ繝ｼ
+    var onFailSoHard = function (e) {
+        console.log('繧ｨ繝ｩ繝ｼ!', e);
+    };
+
+    //繧ｫ繝｡繝ｩ逕ｻ蜒上く繝｣繝励メ繝｣
+    var snapshot = function () {
+        if (localMediaStream) {
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            document.getElementById('img').src = canvas.toDataURL('image/png');
+        }
+
+        saveSnapshot();
+    }
+
+
+    if (hasGetUserMedia()) {
+        console.log("繧ｫ繝｡繝ｩ OK");
+    }
+    else {
+        alert("譛ｪ蟇ｾ蠢懊ヶ繝ｩ繧ｦ繧ｶ縺ｧ縺吶�");
+    }
+
+    window.URL = window.URL || window.webkitURL;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia ||
+        navigator.mozGetUserMedia || navigator.msGetUserMedia;
+    navigator.getUserMedia({
+        video: true
+    }, function (stream) {
+        video.src = window.URL.createObjectURL(stream);
+        localMediaStream = stream;
+    }, onFailSoHard);
+    //繝懊ち繝ｳ繧､繝吶Φ繝�
+    $("#capture").click(function () {
+        snapshot();
+        document.getElementById('capture_images').style.visibility = "visible";
+    });
+    $("#stop").click(function () {
+        localMediaStream.stop();
+    });
+    $("video").click(function () {
+        snapshot();
+        document.getElementById('capture_images').style.visibility = "visible";
+    });
+
+    // Ajax縺ｫ縺ｦ逕ｻ蜒上ョ繝ｼ繧ｿ繧帝∽ｿ｡縺吶ｋ
+    var saveSnapshot = function () {
+        var hostUrl = 'https://chat.bpmboxes.com/MachineL/webcam/save.php'; // 繝��繧ｿ騾∽ｿ｡蜈�
+
+
+        // Send the value to the server and handle the response.
+
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    alert("success");
+                })
+            .withFailureHandler(
+                function (msg, element) {
+                    alert(msg)
+                        // Respond to failure conditions here.
+                        //     showStatus(msg, 'error');
+                        //   element.disabled = false;
+                })
+            .withUserObject(this)
+            .postCamera(document.getElementById('img').src);
+
+
+        //  postCamera(document.getElementById('img').src)
+        /*
+        $.ajax({
+             url: hostUrl,
+             type: 'POST',
+             dataType: 'json',
+             data: {
+                 img: document.getElementById('img').src
+             },
+             timeout: 10000,
+             success: function (data) {
+                 // 謌仙粥
+                 alert("ok");
+             },
+             error: function (XMLHttpRequest, textStatus, errorThrown) {
+             alert(errorThrown);
+                 // 螟ｱ謨�
+                 alert("error");
+                 alert(XMLHttpRequest);
+             }
+         });*/
+    }
+</script>

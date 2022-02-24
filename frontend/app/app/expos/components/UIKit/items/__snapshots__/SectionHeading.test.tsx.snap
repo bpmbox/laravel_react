@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`items.SectionHeading DesktopWidth and Desktop Centered Item Props should be supported 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-B",
+              "fontSize": 17,
+              "fontWeight": "700",
+              "lineHeight": 27.200000000000003,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+              "textAlign": "left",
+            }
+          }
+        >
+          First:
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 44,
+          "maxWidth": "100%",
+        }
+      }
+      testID="input"
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#EAEAEA",
+            "bottom": 0,
+            "height": 0.5,
+            "left": 16,
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+      <TextInput
+        allowFontScaling={true}
+        editable={true}
+        keyboardType="default"
+        multiline={false}
+        numberOfLines={1}
+        placeholder="First name"
+        placeholderTextColor="#CCCCCC"
+        rejectResponderTermination={true}
+        selectionColor="#0066FF"
+        style={
+          Object {
+            "color": "#000000",
+            "fontFamily": "GenEiGothicP-SL",
+            "fontSize": 17,
+            "fontWeight": "400",
+            "minHeight": 44,
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 0,
+            "width": "100%",
+          }
+        }
+        textAlignVertical="top"
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
+</View>
+`;

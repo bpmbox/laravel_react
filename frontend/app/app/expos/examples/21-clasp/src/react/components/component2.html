@@ -1,0 +1,36 @@
+<script type="text/babel">
+	const {connect, Provider} = ReactRedux; // import {connect, Provider} from 'react-redux';
+  const {createStore, compose,combineReducers} = Redux; // import {createStore} from 'redux';
+  const {Component} = React; // import {Component} from 'react';
+function mapStateToProps(state) {
+    return {count: state.count};
+}
+
+const Counter = (props) => (
+    <div>
+        <button onClick={() => props.dispatch({type: "INCR"})}>+</button>
+        <button onClick={() => props.dispatch({type: "DECR"})}>-</button>
+        <br />Counter: {props.count}
+    </div>
+)
+
+
+function mapDispatchToProps(dispatch) {
+    return {
+        onClickIncr: () => dispatch({type: "INCR"}),
+        onClickDecr: () => dispatch({type: "DECR"}),
+    };
+}
+
+//connect(mapStateToProps, mapDispatchToProps)(Counter)
+const Component2 = (props) => (
+    <div>
+        Here is Component2. My props.value2 is {props.value2}.
+  
+   
+        <button onClick={props.onClickIncr}>+</button>
+        <button onClick={props.onClickDecr}>-</button>
+        Counter: {props.count}
+    </div>
+);
+</script>

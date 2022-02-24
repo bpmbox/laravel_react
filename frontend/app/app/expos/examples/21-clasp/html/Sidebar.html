@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base target="_top">
+        <!-- Use a templated HTML printing scriptlet to import common stylesheet -->
+        <?!= HtmlService.createHtmlOutputFromFile('css/Stylesheet').getContent(); ?>
+    </head>
+
+    <body>
+        <!-- Below is the HTML code that defines the sidebar element structure. -->
+        <div class="sidebar branding-below">
+<a href='javascript:void(window.top.document.getElementsByClassName("script-application-sidebar")[0].style.width="100%")'>assssssssssssssaa</a>
+
+</br>
+<a href="https://chrome.google.com/webstore/detail/iframe-allow/gifgpciglhhpmeefjdmlpboipkibhbjg" target=_blunk>CHROME IFRAM インストール</a>
+
+            <?
+//        var data = SpreadsheetApp
+//.getActiveSpreadsheet().getSheetByName('Sheet16').getDataRange()
+//.getValues();
+?>
+                <!-- セレクトボックス　スタート /-->
+                <select name='alphabet'>
+<?
+//output.append(e.parameter.p1);
+function PutLinks()
+{
+  // スプレッドシート内の全シートとスプレッドシートのID
+  var sheets = SpreadsheetApp.getActive().getSheets();
+  var ssId = SpreadsheetApp.getActive().getId();
+
+  // ハイパーリンク文字列の配列
+  var linkList = [[]];
+
+  for(var i=0; i<sheets.length; i++) {
+    // シートのIDと名前
+    var sheetId = sheets[i].getSheetId();
+    var sheetName = sheets[i].getSheetName();
+    output.append('<option value="'+sheetName+'">'+sheetName+"</option>")
+//<option value="mercedes">Mercedes</option>
+    // シートのURLからハイパーリンク文字列を組み立て
+    var url = "https://docs.google.com/spreadsheets/d/" + ssId + "/edit#gid=" + sheetId;
+    var link = [ '=HYPERLINK("' + url + '","' + sheetName + '")' ];
+
+    // ハイパーリンク文字列を配列に格納
+    linkList[i] = link;
+  }
+
+  // 選択中のセルにハイパーリンク文字列を入れる
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var cell = sheet.getActiveCell();
+  var range = sheet.getRange(cell.getRow() , cell.getColumn() ,  linkList.length , 1);
+  //range.setValues(linkList);
+}
+PutLinks()
+?>
+</select>
+                <!-- セレクトボックス　スタート /-->
+                <? //for (var i = 0; i < data.length; i++) { ?>
+                    <? //if(data[i][0]){ ?>
+
+                        <? //for (var j = 0; j < data[i].length; j++) { ?>
+                            <? //output.append(data[i][j])  ?>
+                                <? //} ?>
+
+                                    <? //} ?>
+                                        <? //} ?>
+
+                                            </p>
+
+
+                                            <div class="block form-group" id="sidebar-value-block">
+
+                                            </div>
+
+                                            <div class="block" id="sidebar-value-block">
+                                                <label for="sidebar-value">作業:DATABASE関連</label>
+                                                <div>
+                                                    <button id="bot_createCase">データベースに作業登録bot_createCase</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="block form-group" id="sidebar-value-block">
+
+                                            </div>
+
+                                            <div class="block" id="sidebar-value-block">
+                                                <label for="sidebar-value">作業:DATABASE関連</label>
+                                                <div>
+                                                    <button id="insertSheetFusionTable">FUSIONTABLEに作業登録</button>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="block form-group" id="sidebar-value-block">
+                                                <label for="sidebar-value">作業番号:</label>
+                                                <!--<input id="sidebar-value" value="1">-->
+                                                <textarea id="sidebar-seq" placeholder="作業番号..." value="word"></textarea>
+                                            </div>
+
+
+                                            <div class="block form-group" id="sidebar-value-block">
+
+                                            </div>
+
+                                            <div class="block" id="sidebar-value-block">
+                                                <label for="sidebar-value">作業　検索</label>
+                                                <div>
+                                                    <button id="selectFusion">検索</button>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="block form-group" id="sidebar-value-block">
+                                                <label for="sidebar-value">検索用語:</label>
+                                                <!--<input id="sidebar-value" value="1">-->
+                                                <textarea id="searchWord" placeholder="検索用語..." value="word"></textarea>
+                                            </div>
+
+
+
+                                            <!-- Enter sidebar bottom-branding below. -->
+
+
+                                            <!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+                                            <?!= HtmlService.createHtmlOutputFromFile('js/SidebarJavaScript').getContent(); ?>
+    </body>
+
+</html>

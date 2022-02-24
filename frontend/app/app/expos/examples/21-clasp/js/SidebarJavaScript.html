@@ -1,0 +1,546 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    /**
+     * Run initializations on sidebar load.
+     */
+    $(function () {
+        // Assign handler functions to sidebar elements here, if needed.
+        $('#sidebar-pull-button').click(onPullClick);
+        $('#sidebar-put-button').click(onPutClick);
+        $('#sidebar-dataup-buttonup').click(onDataInput); //データベースに値を登録
+        $('#sidebar-dataup-buttondown').click(onDataOutput); //データベースに値を登録
+        $('#sidebar-send-chatwork').click(onPostChatwork);
+        $('#sidebar-dataup-chatwork').click(setkey); //データベースに値を登録
+        $('#createCase').click(createCase); //BPMにデータ登録
+        $('#sendVariables').click(sendVariables); //BPMにデータ送信
+        $('#getVariables').click(getVariables); //BPMからデータ朱徳
+        $('#bot_createCase').click(bot_createCase); //ケース作成
+        $('#routeCase').click(routeCase);
+        $('#insertSheetFusionTable').click(insertSheetFusionTable);
+        $('#selectFusion').click(selectFusion);
+        $('[name=alphabet]').change(function () {
+            // 選択されているvalue属性値を取り出す
+            var val = $('[name=alphabet]').val();
+            console.log(val); // 出力：ABC
+            // 選択されている表示文字列を取り出す
+            var txt = $('[name=alphabet] option:selected').text();
+            console.log(txt); // 出力：えーびーしー
+            alert(txt)
+        });
+        // Call the server here to retrieve any information needed to build
+        // the dialog, if necessary.
+    });
+
+    /**
+    BPMS作業開始
+    */
+
+    function bot_createCase() {
+        onPostChatwork()
+        this.disabled = true;
+
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    //alert(msg);
+                    $("#sidebar-seq").val(msg)
+                        //alert(element);
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .insert(sht);
+    }
+
+    function insertSheetFusionTable() {
+        onPostChatwork()
+        this.disabled = true;
+
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    //alert(msg);
+                    $("#sidebar-seq").val(msg)
+                        //alert(element);
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .insertSheetFusionTable(sht);
+    }
+
+
+    function selectFusion() {
+        onPostChatwork()
+        this.disabled = true;
+
+        alert($('#searchWord').val())
+        var sht = $('#searchWord').val()
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    //alert(msg);
+                    $("#sidebar-seq").val(msg)
+                        //alert(element);
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .selectFusion(sht);
+    }
+
+
+    function createCase() {
+    alert("実行")
+//  document.getElementsByClassName("script-application-sidebar")[0].style.width='100%'
+        onPostChatwork()
+        this.disabled = true;
+
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        alert("start js Sidebarjavascript")
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    //alert(msg);
+                    $("#sidebar-seq").val(msg)
+                        //alert(element);
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+               // alert("errorr"+msg)
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .createCase("4927727605d5aa3756f48d5066347332", "6259085535d5aa43e67d9e5021399520", sht);
+        //fa = dx.createCase("5634222795921ebd8884326071627847","2831154885921ebda7872e2098677860",2000,data);
+        // fa = dx.createCase("5634222795921ebd8884326071627847","2831154885921ebda7872e2098677860",2000,data);
+    }
+
+    function getVariables() {
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        this.disabled = true;
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .getVariables($('#sidebar-seq').val(), sht);
+    }
+
+    function routeCase() {
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        this.disabled = true;
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .routeCase($('#sidebar-seq').val());
+    }
+
+
+
+    function sendVariables() {
+        alert($('[name=alphabet]').val())
+        var sht = $('[name=alphabet]').val()
+        this.disabled = true;
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .sendVariables($('#sidebar-seq').val(), sht);
+    }
+
+
+
+
+    function onPostChatwork() {
+        //k(chatworkToken,roomId, message)
+        this.disabled = true;
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .onPostChatwork();
+    }
+
+
+
+    var word2 = "";
+
+    function setkey() {
+        this.disabled = true;
+        alert($('#chat-key').val());
+        alert($('#chat-roomid').val());
+        //return
+
+        // Gather any information that needs to be sent to the server here.
+
+        // Send the value to the server and handle the response.
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .setkey($('#chat-key').val(), $('#chat-roomid').val());
+    }
+
+
+
+    /**
+     * Calls the server to retrieve information from the sheet.
+     * Gets the value in the active cell, which is then placed in the
+     * sidebar text field.
+     */
+    function onDataInput() {
+        this.disabled = true;
+
+        // Gather any information that needs to be sent to the server here.
+
+        // Send the value to the server and handle the response.
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('データ登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .testfindRowIntoSQL();
+    }
+
+    /**
+     * Calls the server to retrieve information from the sheet.
+     * Gets the value in the active cell, which is then placed in the
+     * sidebar text field.
+     */
+    function onDataOutput() {
+        this.disabled = true;
+
+        // Gather any information that needs to be sent to the server here.
+
+        // Send the value to the server and handle the response.
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    //・・ showStatus(msg, 'データ登録完了');
+                    showStatus('データ登録完了');
+                    element.disabled = false;
+                }
+            ).withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .testWrittoTOSheet();
+    }
+
+
+    /**
+     * Calls the server to retrieve information from the sheet.
+     * Gets the value in the active cell, which is then placed in the
+     * sidebar text field.
+     */
+    function onPullClick() {
+        this.disabled = true;
+
+        // Gather any information that needs to be sent to the server here.
+
+        // Send the value to the server and handle the response.
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    // Respond to success conditions here.
+                    $('#sidebar-value').val(msg);
+
+
+                    // 話すための機能をインスタンス化して、色々と値を設定します.
+                    var msg1 = new SpeechSynthesisUtterance();
+                    msg1.volume = 3;
+                    msg1.rate = 1;
+                    msg1.pitch = 2;
+                    // テキストスピーチ開始
+                    //   msg.text = results[i][0].transcript; //document.querySelector("#text1").value; // しゃべる内容
+                    // msg.lang = "ja-JP";
+                    msg1.lang = "en-US";
+
+                    msg1.text = msg;
+                    speechSynthesis.speak(msg1);
+
+
+                    showStatus('Pulled value successfully.');
+                    element.disabled = false;
+                })
+            .withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .getActiveValue();
+    }
+
+    /**
+     * Calls the server to modify the sheet.
+     * Replace the currently selected cell value with the value in the
+     * sidebar text field.
+     */
+    function onPutClick() {
+        this.disabled = true;
+
+        // Gather any information that needs to be sent to the server here.
+        var value = word2; //$('#sidebar-value').val();
+
+        // Send the value to the server and handle the response.
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    // Respond to success conditions here.
+                    showStatus('Cell set to reference value: ' + value);
+                    element.disabled = false;
+                })
+            .withFailureHandler(
+                function (msg, element) {
+                    // Respond to failure conditions here.
+                    showStatus(msg, 'error');
+                    element.disabled = false;
+                })
+            .withUserObject(this)
+            .setActiveValue(value);
+    }
+
+    /**
+     * Displays the given status message in the sidebar.
+     *
+     * @param {String} msg The status message to display.
+     * @param {String} classId The message type (class id) that the message
+     *   should be displayed as.
+     */
+    function showStatus(msg, classId) {
+        $('#sidebar-status').removeClass().html(msg);
+        if (classId) {
+            $('#sidebar-status').addClass(classId);
+        }
+    }
+
+    /**
+      @function vw_function2
+      @日本語での会話
+      */
+    var zz = 0;
+
+    function vr_function2(ws) {
+        window.SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
+        var recognition = new webkitSpeechRecognition();
+        recognition.lang = "ja";
+        //recognition.lang = "en";
+        recognition.interimResults = true;
+        recognition.continuous = true;
+
+        recognition.onsoundstart = function () {
+            document.getElementById("status").innerHTML = "認識中";
+        };
+        recognition.onnomatch = function () {
+            document.getElementById("status").innerHTML = "もう一度試してください";
+        };
+        recognition.onerror = function () {
+            document.getElementById("status").innerHTML = "エラー";
+            //    recognition.stop();
+            if (flag_speech2 == 0)
+                vr_function2(ws);
+        };
+        recognition.onsoundend = function () {
+            document.getElementById("status").innerHTML = "停止中";
+            vr_function2(ws);
+        };
+
+        recognition.onresult = function (event) {
+            zz++;
+            if (zz > 4) {
+                recognition.stop();
+                zz = 0;
+            }
+            var results = event.results;
+            //var messageInput = document.getElementById("message-input");
+            //var url = document.getElementById("status");
+
+            //var messageVal = messageInput.value;
+            //var urls = url.value;
+            //messageInput.value = "";
+            //  appendMessage();
+            //  messageFeed.scrollTop = messageFeed.scrollHeight;
+            //  timedResponse();
+            //ws.send(messageVal); //websockeでメッセージ送信
+            var z = 0;
+            //alert("test");
+            for (var i = event.resultIndex; i < results.length; i++) {
+                $('#sidebar-value').val(results[i][0].transcript);
+                //   if(
+                word2 = results[i][0].transcript
+                onPutClick()
+                    /*
+
+           if(word2 != "" && i>2){
+           recognition.stop();
+             //onPutClick()
+             //exit()
+            recognition.stop();
+             return
+           }*/
+                if (results[i].isFinal) {
+                    $('#sidebar-value').val(results[i][0].transcript);
+                    //   onPutClick()
+                    //  document.getElementById("message-input").value = results[i][0].transcript;
+                    //document.getElementById("message-input").value = results[i][0].transcript;
+                    //jQuery("#New_Button_11").click() ;
+                    //jQuery("#New_Button_16").click() ;
+                    //jQuery("#New_Button_26").click() ;
+
+                    //トリガー スプレッドシート検索
+                    //   google.script.run.withSuccessHandler(onSuccess2)
+                    //       .searchSpread(results[i][0].transcript);
+
+
+                    //sendMessage(eng+"56666666666")
+
+                    // 話すための機能をインスタンス化して、色々と値を設定します.
+
+                    /*
+                    var msg = new SpeechSynthesisUtterance();
+                                    msg.volume = 3;
+                                    msg.rate = 1;
+                                    msg.pitch = 2;
+                                    msg.lang = "en-US";
+                    */
+
+
+                    //afdsSpreadsheetApp.ge
+                    /*
+                    var bk = SpreadsheetApp.getActiveSpreadsheet();
+　var sh = bk.getActiveSheet();
+　var rng = sh.getActiveCell();
+msg.text = rng.offset(0, 1).getValue();
+*/
+
+                    /*
+                     google.script.run
+                            .withSuccessHandler(
+                              function(message) {
+                                msg.text = message;
+                                speechSynthesis.speak(msg);
+                              })
+                            .withFailureHandler(
+                              function(msg, element) {
+                                // Respond to failure conditions here.
+                                showStatus(msg, 'error');
+                                element.disabled = false;
+                              })
+                            .withUserObject(this)
+                            .getNextCellData();
+                      */
+                    vr_function2(ws);
+                    //if(results[i][0].transcript == "検索")
+
+                }
+                else {
+                    //document.getElementById("message-input").value = "[途中経過] " + results[i][0].transcript;
+                    $('#sidebar-value').val("[途中経過] " + results[i][0].transcript);
+                    flag_speech2 = 1;
+                }
+            }
+        }
+        flag_speech2 = 0;
+        //document.getElementById("status").innerHTML = "start";
+        recognition.start();
+    }
+    // vr_function2()
+</script>

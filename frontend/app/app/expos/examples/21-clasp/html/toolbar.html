@@ -1,0 +1,42 @@
+<toolbar>
+<item id="new" type="buttonSelect" img="../imgs_menu/new.gif" imgdis="../imgs_menu/new_dis.gif" text="New" action="showNewDocumentSelect">
+<item type="button" id="new_text" text="Text Document" img="../imgs_menu/text_document.gif" action="doOnNewDocument"/>
+<item type="button" id="new_excel" text="Stylesheet" img="../imgs_menu/stylesheet.gif" action="doOnNewDocument"/>
+<item type="button" id="new_db" text="Database" img="../imgs_menu/database.gif" action="doOnNewDocument"/>
+<item type="button" id="new_pp" text="Presentation" img="../imgs_menu/presentation.gif" action="doOnNewDocument"/>
+<item type="separator" id="new_s1"/>
+<item type="button" id="new_other" text="Other" img="../imgs_menu/other.gif" action="doOnNewDocument"/>
+</item>
+<item id="sep1" type="separator"/>
+<item id="open" type="button" img="../imgs_menu/open.gif" imgdis="../imgs_menu/open_dis.gif"/>
+<item id="save" type="button" img="../imgs_menu/save.gif" imgdis="../imgs_menu/save_dis.gif"/>
+<item id="save_as" type="button" img="../imgs_menu/save_as.gif" text="Save As..." imgdis="../imgs_menu/save_as_dis.gif" enabled="false"/>
+<item id="sep2" type="separator"/>
+<item id="undo" type="button" img="../imgs_menu/undo.gif" imgdis="../imgs_menu/undo_dis.gif"/>
+<item id="redo" type="button" img="../imgs_menu/redo.gif" imgdis="../imgs_menu/redo_dis.gif"/>
+<item id="sep3" type="separator"/>
+<item id="cut" type="button" img="../imgs_menu/cut.gif" text="Cut" imgdis="../imgs_menu/cut_dis.gif" action="doEdit">
+<userdata name="linka">
+<![CDATA[ http://linkA ]]>
+</userdata>
+<userdata name="linkb">
+<![CDATA[ http://linkB ]]>
+</userdata>
+</item>
+<item id="copy" type="button" img="../imgs_menu/copy.gif" text="Copy" imgdis="../imgs_menu/copy_dis.gif" action="doEdit">
+<userdata name="linkc">
+<![CDATA[ http://linkC ]]>
+</userdata>
+</item>
+<item id="paste" type="button" img="../imgs_menu/paste.gif" text="Paste" imgdis="../imgs_menu/paste_dis.gif" action="doEdit"/>
+<item id="sep4" type="separator"/>
+<item id="print" type="buttonSelect" img="../imgs_menu/print.gif" imgdis="../imgs_menu/print_dis.gif" text="Print">
+<item type="button" id="print_page" text="Page" img="../imgs_menu/page.gif"/>
+<item type="button" id="print_range" text="Page Range" img="../imgs_menu/page_range.gif"/>
+<item type="button" id="print_sel" text="Selection" img="../imgs_menu/selection.gif"/>
+<item type="separator" id="print_s1"/>
+<item type="button" id="print_cfg" text="Settings" img="../imgs_menu/settings.gif"/>
+</item>
+<item id="sep5" type="separator"/>
+<item id="info" type="text" text="dhtmlxToolbar Demo"/>
+</toolbar>

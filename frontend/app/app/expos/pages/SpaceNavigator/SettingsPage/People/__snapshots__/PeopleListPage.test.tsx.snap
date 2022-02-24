@@ -1,0 +1,2829 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PeopleListPage should display list of pending invites 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollView
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    scrollable={true}
+    style={
+      Array [
+        undefined,
+      ]
+    }
+  >
+    <View
+      desktopWidth={720}
+      style={
+        Array [
+          Object {},
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 56,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          size={1}
+          style={
+            Object {
+              "paddingHorizontal": 16,
+              "width": "100%",
+            }
+          }
+          title="Add a Member"
+        >
+          <TouchableOpacity
+            activeOpacity={0.9}
+            hoverStyle={
+              Object {
+                "borderRadius": 7.4375,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": Object {
+                  "height": 10,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 20,
+              }
+            }
+            onPress={[Function]}
+            onPressIn={[Function]}
+            onPressOut={[Function]}
+          >
+            <Text
+              ellipsizeMode="tail"
+              numberOfLines={1}
+              style={
+                Object {
+                  "backgroundColor": "#0066FF",
+                  "borderColor": "#00000000",
+                  "borderRadius": 7.4375,
+                  "borderWidth": 0,
+                  "color": "#FFFFFF",
+                  "fontFamily": "GenEiGothicP-R",
+                  "fontSize": 17,
+                  "fontWeight": "500",
+                  "lineHeight": 42.5,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 32,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
+            >
+              Add a Member
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            undefined,
+            Object {},
+            Object {},
+            Object {
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 44,
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#F6F6F6",
+                  "borderRadius": 7.4375,
+                  "bottom": 4,
+                  "display": "flex",
+                  "left": 16,
+                  "position": "absolute",
+                  "right": 16,
+                  "top": 4,
+                  "zIndex": -1,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                selectable={false}
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "GenEiGothicP-SL",
+                    "fontSize": 17,
+                    "fontWeight": "400",
+                    "lineHeight": 25.5,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "paddingBottom": 4,
+                    "paddingLeft": 32,
+                    "paddingRight": 16,
+                    "paddingTop": 4,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                
+              </Text>
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              keyboardType="default"
+              multiline={false}
+              numberOfLines={1}
+              onChangeText={[Function]}
+              placeholder="Filter by name..."
+              placeholderTextColor="#CCCCCC"
+              rejectResponderTermination={true}
+              selectionColor="#0066FF"
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "GenEiGothicP-SL",
+                  "fontSize": 17,
+                  "fontWeight": "400",
+                  "minHeight": 44,
+                  "paddingBottom": 0,
+                  "paddingLeft": 32,
+                  "paddingRight": 32,
+                  "paddingTop": 0,
+                  "width": "100%",
+                }
+              }
+              textAlignVertical="top"
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 25.5,
+                "fontWeight": "500",
+                "height": 48,
+                "lineHeight": 46,
+                "textAlign": "center",
+                "width": 47,
+              }
+            }
+          >
+            J
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Jon Snow
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            jsnow@winterfell.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member (Pending)
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </ScrollView>
+</SafeAreaView>
+`;
+
+exports[`PeopleListPage should display list of updated roles after a role update 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollView
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    scrollable={true}
+    style={
+      Array [
+        undefined,
+      ]
+    }
+  >
+    <View
+      desktopWidth={720}
+      style={
+        Array [
+          Object {},
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 56,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          size={1}
+          style={
+            Object {
+              "paddingHorizontal": 16,
+              "width": "100%",
+            }
+          }
+          title="Add a Member"
+        >
+          <TouchableOpacity
+            activeOpacity={0.9}
+            hoverStyle={
+              Object {
+                "borderRadius": 7.4375,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": Object {
+                  "height": 10,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 20,
+              }
+            }
+            onPress={[Function]}
+            onPressIn={[Function]}
+            onPressOut={[Function]}
+          >
+            <Text
+              ellipsizeMode="tail"
+              numberOfLines={1}
+              style={
+                Object {
+                  "backgroundColor": "#0066FF",
+                  "borderColor": "#00000000",
+                  "borderRadius": 7.4375,
+                  "borderWidth": 0,
+                  "color": "#FFFFFF",
+                  "fontFamily": "GenEiGothicP-R",
+                  "fontSize": 17,
+                  "fontWeight": "500",
+                  "lineHeight": 42.5,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 32,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
+            >
+              Add a Member
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            undefined,
+            Object {},
+            Object {},
+            Object {
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 44,
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#F6F6F6",
+                  "borderRadius": 7.4375,
+                  "bottom": 4,
+                  "display": "flex",
+                  "left": 16,
+                  "position": "absolute",
+                  "right": 16,
+                  "top": 4,
+                  "zIndex": -1,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                selectable={false}
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "GenEiGothicP-SL",
+                    "fontSize": 17,
+                    "fontWeight": "400",
+                    "lineHeight": 25.5,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "paddingBottom": 4,
+                    "paddingLeft": 32,
+                    "paddingRight": 16,
+                    "paddingTop": 4,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                
+              </Text>
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              keyboardType="default"
+              multiline={false}
+              numberOfLines={1}
+              onChangeText={[Function]}
+              placeholder="Filter by name..."
+              placeholderTextColor="#CCCCCC"
+              rejectResponderTermination={true}
+              selectionColor="#0066FF"
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "GenEiGothicP-SL",
+                  "fontSize": 17,
+                  "fontWeight": "400",
+                  "minHeight": 44,
+                  "paddingBottom": 0,
+                  "paddingLeft": 32,
+                  "paddingRight": 32,
+                  "paddingTop": 0,
+                  "width": "100%",
+                }
+              }
+              textAlignVertical="top"
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 48,
+                  "width": 48,
+                },
+                Object {
+                  "borderRadius": 24,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://pbs.twimg.com/profile_images/1117701700360581126/4p020QBx_400x400.jpg",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  Object {
+                    "borderRadius": 24,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Arya Stark
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            as@faceless.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 48,
+                  "width": 48,
+                },
+                Object {
+                  "borderRadius": 24,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://www.telegraph.co.uk/content/dam/fashion/2017/06/19/TELEMMGLPICT000131421802_trans_NvBQzQNjv4BqkUE_BTgBOQu3VWKvpDGX9fr7sARQy7EgBjwPUzvqL_M.jpeg?imwidth=450",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  Object {
+                    "borderRadius": 24,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Daenerys Targarian
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            d.targarian@dragonriders.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Admin
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 48,
+                  "width": 48,
+                },
+                Object {
+                  "borderRadius": 24,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://www.stickpng.com/assets/images/5cb83a4a32c4f52f2e5ea223.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  Object {
+                    "borderRadius": 24,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Grey Worm
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            gworm@unsullied.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 48,
+                  "width": 48,
+                },
+                Object {
+                  "borderRadius": 24,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d0/JonSnow8x06.PNG/revision/latest?cb=20190714094440",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  Object {
+                    "borderRadius": 24,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Jon Snow
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            j.snow@winterfell.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Owner
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 48,
+                  "width": 48,
+                },
+                Object {
+                  "borderRadius": 24,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://static.toiimg.com/photo/62981209/.jpg",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 48,
+                    "width": 48,
+                  },
+                  Object {
+                    "borderRadius": 24,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Tyrion Lannister
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            t.lannister@kingslanding.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </ScrollView>
+</SafeAreaView>
+`;
+
+exports[`PeopleListPage should display new invitations after they are sent 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollView
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    scrollable={true}
+    style={
+      Array [
+        undefined,
+      ]
+    }
+  >
+    <View
+      desktopWidth={720}
+      style={
+        Array [
+          Object {},
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 56,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          size={1}
+          style={
+            Object {
+              "paddingHorizontal": 16,
+              "width": "100%",
+            }
+          }
+          title="Add a Member"
+        >
+          <TouchableOpacity
+            activeOpacity={0.9}
+            hoverStyle={
+              Object {
+                "borderRadius": 7.4375,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": Object {
+                  "height": 10,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 20,
+              }
+            }
+            onPress={[Function]}
+            onPressIn={[Function]}
+            onPressOut={[Function]}
+          >
+            <Text
+              ellipsizeMode="tail"
+              numberOfLines={1}
+              style={
+                Object {
+                  "backgroundColor": "#0066FF",
+                  "borderColor": "#00000000",
+                  "borderRadius": 7.4375,
+                  "borderWidth": 0,
+                  "color": "#FFFFFF",
+                  "fontFamily": "GenEiGothicP-R",
+                  "fontSize": 17,
+                  "fontWeight": "500",
+                  "lineHeight": 42.5,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 32,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
+            >
+              Add a Member
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            undefined,
+            Object {},
+            Object {},
+            Object {
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 44,
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#F6F6F6",
+                  "borderRadius": 7.4375,
+                  "bottom": 4,
+                  "display": "flex",
+                  "left": 16,
+                  "position": "absolute",
+                  "right": 16,
+                  "top": 4,
+                  "zIndex": -1,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                selectable={false}
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "GenEiGothicP-SL",
+                    "fontSize": 17,
+                    "fontWeight": "400",
+                    "lineHeight": 25.5,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "paddingBottom": 4,
+                    "paddingLeft": 32,
+                    "paddingRight": 16,
+                    "paddingTop": 4,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                
+              </Text>
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              keyboardType="default"
+              multiline={false}
+              numberOfLines={1}
+              onChangeText={[Function]}
+              placeholder="Filter by name..."
+              placeholderTextColor="#CCCCCC"
+              rejectResponderTermination={true}
+              selectionColor="#0066FF"
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "GenEiGothicP-SL",
+                  "fontSize": 17,
+                  "fontWeight": "400",
+                  "minHeight": 44,
+                  "paddingBottom": 0,
+                  "paddingLeft": 32,
+                  "paddingRight": 32,
+                  "paddingTop": 0,
+                  "width": "100%",
+                }
+              }
+              textAlignVertical="top"
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 25.5,
+                "fontWeight": "500",
+                "height": 48,
+                "lineHeight": 46,
+                "textAlign": "center",
+                "width": 47,
+              }
+            }
+          >
+            J
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Jon Snow
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            jsnow@winterfell.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member (Pending)
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </ScrollView>
+</SafeAreaView>
+`;
+
+exports[`PeopleListPage should display new invitations after they are sent 2`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollView
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    scrollable={true}
+    style={
+      Array [
+        undefined,
+      ]
+    }
+  >
+    <View
+      desktopWidth={720}
+      style={
+        Array [
+          Object {},
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 56,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          size={1}
+          style={
+            Object {
+              "paddingHorizontal": 16,
+              "width": "100%",
+            }
+          }
+          title="Add a Member"
+        >
+          <TouchableOpacity
+            activeOpacity={0.9}
+            hoverStyle={
+              Object {
+                "borderRadius": 7.4375,
+                "opacity": 1,
+                "shadowColor": "#000000",
+                "shadowOffset": Object {
+                  "height": 10,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.1,
+                "shadowRadius": 20,
+              }
+            }
+            onPress={[Function]}
+            onPressIn={[Function]}
+            onPressOut={[Function]}
+          >
+            <Text
+              ellipsizeMode="tail"
+              numberOfLines={1}
+              style={
+                Object {
+                  "backgroundColor": "#0066FF",
+                  "borderColor": "#00000000",
+                  "borderRadius": 7.4375,
+                  "borderWidth": 0,
+                  "color": "#FFFFFF",
+                  "fontFamily": "GenEiGothicP-R",
+                  "fontSize": 17,
+                  "fontWeight": "500",
+                  "lineHeight": 42.5,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 32,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
+            >
+              Add a Member
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            undefined,
+            Object {},
+            Object {},
+            Object {
+              "paddingHorizontal": 0,
+              "paddingVertical": 0,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 44,
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#F6F6F6",
+                  "borderRadius": 7.4375,
+                  "bottom": 4,
+                  "display": "flex",
+                  "left": 16,
+                  "position": "absolute",
+                  "right": 16,
+                  "top": 4,
+                  "zIndex": -1,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flex": 1,
+                  "flexDirection": "column",
+                  "flexGrow": 1,
+                  "justifyContent": "center",
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                selectable={false}
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "GenEiGothicP-SL",
+                    "fontSize": 17,
+                    "fontWeight": "400",
+                    "lineHeight": 25.5,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "paddingBottom": 4,
+                    "paddingLeft": 32,
+                    "paddingRight": 16,
+                    "paddingTop": 4,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                
+              </Text>
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              autoCapitalize="none"
+              editable={true}
+              keyboardType="default"
+              multiline={false}
+              numberOfLines={1}
+              onChangeText={[Function]}
+              placeholder="Filter by name..."
+              placeholderTextColor="#CCCCCC"
+              rejectResponderTermination={true}
+              selectionColor="#0066FF"
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "GenEiGothicP-SL",
+                  "fontSize": 17,
+                  "fontWeight": "400",
+                  "minHeight": 44,
+                  "paddingBottom": 0,
+                  "paddingLeft": 32,
+                  "paddingRight": 32,
+                  "paddingTop": 0,
+                  "width": "100%",
+                }
+              }
+              textAlignVertical="top"
+              underlineColorAndroid="transparent"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 25.5,
+                "fontWeight": "500",
+                "height": 48,
+                "lineHeight": 46,
+                "textAlign": "center",
+                "width": 47,
+              }
+            }
+          >
+            A
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            astark@facelessmen.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member (Pending)
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 72,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#F6F6F6",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 24,
+              "borderWidth": 0.5,
+              "height": 48,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 48,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 25.5,
+                "fontWeight": "500",
+                "height": 48,
+                "lineHeight": 46,
+                "textAlign": "center",
+                "width": 47,
+              }
+            }
+          >
+            J
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Jon Snow
+          </Text>
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#777777",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 14.875,
+                "fontWeight": "400",
+                "opacity": 1,
+                "paddingBottom": 5,
+                "paddingLeft": 72,
+                "paddingRight": 16,
+              }
+            }
+          >
+            jsnow@winterfell.com
+          </Text>
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.2}
+          onPress={[Function]}
+        >
+          <Text
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "paddingLeft": 10,
+                "paddingRight": 16,
+                "textAlign": "right",
+              }
+            }
+          >
+            Member (Pending)
+          </Text>
+        </TouchableOpacity>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 16,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 17,
+                "fontWeight": "400",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </ScrollView>
+</SafeAreaView>
+`;

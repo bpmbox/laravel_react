@@ -1,0 +1,100 @@
+{
+  "timeZone": "Asia/Tokyo",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Gmail",
+        "serviceId": "gmail",
+        "version": "v1"
+      },
+      {
+        "userSymbol": "Slides",
+        "serviceId": "slides",
+        "version": "v1"
+      },
+      {
+        "userSymbol": "Calendar",
+        "serviceId": "calendar",
+        "version": "v3"
+      },
+      {
+        "userSymbol": "Drive",
+        "serviceId": "drive",
+        "version": "v2"
+      },
+      {
+        "userSymbol": "Docs",
+        "serviceId": "docs",
+        "version": "v1"
+      },
+      {
+        "userSymbol": "Sheets",
+        "serviceId": "sheets",
+        "version": "v4"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "ChatWorkClient",
+        "libraryId": "1nf253qsOnZ-RcdcFu1Y2v4pGwTuuDxN5EbuvKEZprBWg764tjwA5fLav",
+        "version": "18",
+        "developmentMode": true
+      },
+      {
+        "userSymbol": "FirebaseApp",
+        "libraryId": "1hguuh4Zx72XVC1Zldm_vTtcUUKUA6iBUOoGnJUWLfqDWx5WlOJHqYkrt",
+        "version": "30"
+      }
+    ]
+  },
+  "webapp": {
+    "executeAs": "USER_ACCESSING",
+    "access": "ANYONE"
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "executionApi": {
+    "access": "ANYONE"
+  },
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [
+      {
+        "menuName": "無題のマクロ",
+        "functionName": "myFunction1"
+      },
+      {
+        "menuName": "無題のマクロ 1",
+        "functionName": "myFunction2"
+      },
+      {
+        "menuName": "異動",
+        "functionName": "myFunction3",
+        "defaultShortcut": "Ctrl+Alt+Shift+1"
+      },
+      {
+        "menuName": "Untitled Macro",
+        "functionName": "UntitledMacro"
+      },
+      {
+        "menuName": "Untitled Macro 1",
+        "functionName": "UntitledMacro1"
+      },
+      {
+        "menuName": "Untitled Macro 2",
+        "functionName": "UntitledMacro2"
+      },
+      {
+        "menuName": "Untitled Macro 3",
+        "functionName": "UntitledMacro3"
+      },
+      {
+        "menuName": "Untitled Macro44",
+        "functionName": "UntitledMacro44"
+      },
+      {
+        "menuName": "Untitled Macro55",
+        "functionName": "UntitledMacro55"
+      }
+    ]
+  }
+}

@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <?!= require('css/css2'); ?>
+  <?!= require('js/chateng'); ?>
+  <title>Chat Widget</title>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet"
+    href="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/dhtmlxscheduler.css" type="text/css"
+    charset="utf-8">
+  <link rel="stylesheet"
+    href="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/preview_skyblue.css" type="text/css"
+    charset="utf-8">
+  <link rel="stylesheet"
+    href="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/preview_terrace.css" type="text/css"
+    charset="utf-8">
+  <link rel="stylesheet" href="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/preview_web.css"
+    type="text/css" charset="utf-8">
+
+  <script src="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/preview.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/dhtmlxscheduler.js"
+    type="text/javascript" charset="utf-8"></script>
+  <script language="JavaScript" src="https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/swfobject.js"
+    type="text/javascript">
+    </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-iframe@1.8.0/dist/cjs/iframe.min.js"></script>
+</head>
+
+<body>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <?!= require('src/react/components/inputreact'); ?>
+  <!-- ローディングスクリプト
+    <?!= requrefirebase(); ?>
+       -->
+  <script type="text/babel">
+    'use strict';
+
+    class VoteButton2 extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          voted: false,
+          name: "",
+          text: "",
+        };
+        this.onChangeName = this.onChangeName.bind(this);
+        this.onChangeText = this.onChangeText.bind(this);
+
+      }
+
+      onChangeText(e) {
+        this.setState({
+          text: e.target.value,
+        });
+      }
+
+
+      onChangeTitle(e) {
+        this.setState({
+          title: e.target.value,
+        });
+      }
+
+      onChangeName(e) {
+        this.setState({
+          name: e.target.value,
+        });
+      }
+
+      saveTutorial() {
+        let data = {
+          title: this.state.title,
+          description: this.state.description,
+          published: false,
+          name: this.state.name,
+          text: this.state.text,
+        };
+        /*
+            TutorialDataService.create(data)
+              .then(() => {
+                console.log("Created new item successfully!");
+                this.setState({
+                  submitted: true,
+                });
+              })
+              .catch((e) => {
+                console.log(e);
+              });*/
+      }
+
+      render() {
+        if (this.state.voted) {
+          return (
+            <div>
+              <div className="form-group">
+                <label htmlFor="description">text</label>
+                <textarea
+                  type="text"
+                  className="form-control"
+                  id="text"
+                  required
+                  value={this.state.text}
+                  onChange={this.onChangeText}
+                  name="text"
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="description">nme</label>
+                <textarea
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  required
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+                  name="name"
+                />
+              </div>
+              <button onClick={this.saveTutorial} className="btn btn-success">
+                Submit
+            </button>
+              <button onClick={
+                () => this.setState({ voted: false })
+              }>
+                voted
+                        </button>
+            </div>
+          )
+        } else {
+          return (
+            <button onClick={() => this.setState({ voted: true })}>
+              vote
+            </button>
+          );
+        }
+      }
+    }
+
+    class VoteButton extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          voted: false,
+          name: "",
+          text: "",
+        };
+        this.onChangeName = this.onChangeName.bind(this);
+        this.onChangeText = this.onChangeText.bind(this);
+
+      }
+
+      onChangeText(e) {
+        this.setState({
+          text: e.target.value,
+        });
+      }
+
+      onChangeTitle(e) {
+        this.setState({
+          title: e.target.value,
+        });
+      }
+
+      onChangeName(e) {
+        this.setState({
+          name: e.target.value,
+        });
+      }
+
+      saveTutorial() {
+        let data = {
+          title: this.state.title,
+          description: this.state.description,
+          published: false,
+          name: this.state.name,
+          text: this.state.text,
+        };
+        /*
+            TutorialDataService.create(data)
+              .then(() => {
+                console.log("Created new item successfully!");
+                this.setState({
+                  submitted: true,
+                });
+              })
+              .catch((e) => {
+                console.log(e);
+              });*/
+      }
+
+      render() {
+        if (this.state.voted) {
+          return (
+            <div>
+              <div className="form-group">
+                <label htmlFor="description">text</label>
+                <textarea
+                  type="text"
+                  className="form-control"
+                  id="text"
+                  required
+                  value={this.state.text}
+                  onChange={this.onChangeText}
+                  name="text"
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="description">name</label>
+                <textarea
+                  type="text"
+                  className="form-control"
+                  id="name"
+                  required
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+                  name="name"
+                />
+              </div>
+              <button onClick={this.saveTutorial} className="btn btn-success">
+                Submit
+            </button>
+              <button onClick={
+                () => this.setState({ voted: false })
+              }>
+                voted
+                        </button>
+            </div>
+          )
+        } else {
+          return (
+            <button onClick={() => this.setState({ voted: true })}>
+              vote
+            </button>
+          );
+        }
+      }
+    }
+
+  </script>
+
+  <!--
+         <textarea id="message-input_junle" placeholder="Message..." value=""></textarea>
+          function showStatus(msg, classId) {
+    $('#sidebar-status').removeClass().html(msg);
+    if (classId) {
+      $('#sidebar-status').addClass(classId);
+    }
+  }
+         /-->
+  <!--
+        <div class="phone-canvas">
+            <div class="info-panel">
+            <div class="info-title">
+
+                <h2> <a target="_new" href="https://www.bpmchat.com">BPMCHAT</a></h2>
+                <h1>BPMBOXES</h1>
+                <h2> <a target="_new" href="https://www.bpmboxes.com/">BPMBOXES</a></h2>
+ <div id="sidebar-status"></div>
+            </div>
+        </div>/-->
+  <div id="chatobj">
+    <table>
+      <tr>
+        <td valign="top">
+          <div class="chat-ui-canvas">
+
+            <div id="header" class="header header-scrolled">
+              <div class="top-icons">
+                <div class="back-arrow">
+                  <div class="back-arrow-line back-arrow-line-1"></div>
+                  <div class="back-arrow-line back-arrow-line-2"></div>
+                  <div class="back-arrow-line back-arrow-line-3"></div>
+                </div>
+                <div class="phone-icon">
+                  <img src="https://i.imgur.com/4OTkocV.png" height="50%">
+                </div>
+              </div>
+              <div class="user-header-image"></div>
+              <div class="user-name-header">
+                <h1>Kenichi miyata</h1>
+              </div>
+            </div>
+            <div id="message-feed" class="message-feed message-feed-unscrolled">
+              <div class="message message-from">
+                <div class="message-name">
+                  <h1>音声サポート</h1>
+                </div>
+                <div class="message-body">
+                  <p>
+                    CHROME 対応　マイクを用意してください.
+                  </p>
+                </div>
+                <div class="message-timestamp">
+                  <p>Today 10:02</p>
+                </div>
+              </div>
+              <div class="message message-to">
+                <div class="message-name">
+                  <h1>You</h1>
+                </div>
+                <div class="message-body">
+                  <p>
+                    こんにちは　音声ナビ　へ　業務フローと連動して作業をナビゲートします.
+                  </p>
+                </div>
+                <div class="message-timestamp">
+                  <p>Today 10:14</p>
+                </div>
+              </div>
+              <div class="message message-from">
+                <div class="message-name">
+                  <h1>BPMCHAT</h1>
+                </div>
+                <div class="message-body">
+                  <p>
+                    音声、または　テキストに業務項目を登録するとナビゲートが始まります　説明はこちら
+                  </p><a href="https://bpmchat.com" target="_blunk">BPMCHAT説明</a>
+                </div>
+                <div class="message-timestamp">
+                  <p>Today 10:20</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="message-input-bar">
+              <div id="media-expand-arrow" class="media-expand-arrow">
+                <div class="media-expand-arrow-line media-expand-arrow-line-1"></div>
+                <div class="media-expand-arrow-line media-expand-arrow-line-2"></div>
+                <div class="media-expand-arrow-line media-expand-arrow-line-3"></div>
+              </div>
+              <div class="message-text-input">
+                <form class="message-send">
+                  <textarea id="message-input" placeholder="Message..." value="" 　rows="4" cols="40"></textarea>
+                  <textarea id="status" placeholder="Message..." value=""></textarea>
+                </form>
+              </div>
+            </div>
+            <div id="media-bar" class="media-bar">
+              <div class="media-bar-header">
+                <div class="media-bar-title">
+                  <h1>Media</h1>
+                </div>
+                <div id="media-bar-cross" class="media-close">
+                  <div class="media-close-line media-close-line-1"></div>
+                  <div class="media-close-line media-close-line-2"></div>
+                </div>
+              </div>
+              <div class="media-bar-body">
+                <div class="media-buttons-canvas">
+                  <div class="media-button media-video">
+                    <img src="https://imgur.com/x9NDjYV.png">
+                  </div>
+                  <div class="media-button media-image">
+                    <img src="https://imgur.com/0Sw4F6i.png">
+                  </div>
+                  <div class="media-button media-audio">
+                    <img src="https://imgur.com/2KlzOiN.png">
+                  </div>
+                  <div class="media-button media-location">
+                    <img src="https://imgur.com/OvqVDk5.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td align="top">
+          候補者1:田中
+          <div class="vote_button_container"></div>
+          <textarea id="inputcode" rows="10" cols="40">感想を記入します。</textarea><br>
+          </p>
+          <div>
+            <button id="btnSeek" data-seek="30.7">Seek 30</button>
+            <button id="btnSeek" data-seek="60">Seek 60</button>
+            <button id="btnSeek" data-seek="90">Seek 90</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="btnSeek" data-seek="180">Seek 180</button>
+            <button id="stopMovie" type="button" class="button -stop">STOP</button>
+            <button id="pauseMovie" type="button" class="button -pause">PAUSE</button>
+            <button id="playMovie" type="button" class="button -play">PLAY</button>
+
+          </div>
+          <div id="player" class="media-bar-body"></div>
+          <input type="text" id="url" style="width: 600px">
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    /*
+This is an example snippet - you should consider tailoring it
+to your service.
+*/
+
+    /*
+    This is an example snippet - you should consider tailoring it
+    to your service.
+    */
+
+    async function fetchGraphQL(operationsDoc, operationName, variables) {
+      const result = await fetch(
+        "https://showcase.dreamso.net/v1/graphql",
+        {
+          method: "POST",
+          body: JSON.stringify({
+            query: operationsDoc,
+            variables: variables,
+            operationName: operationName
+          })
+        }
+      );
+
+      return await result.json();
+    }
+
+    const operationsDoc = `
+  query MyQuery {
+    Address {
+      address
+      Address_id
+    }
+  }
+`;
+
+    function fetchMyQuery() {
+      return fetchGraphQL(
+        operationsDoc,
+        "MyQuery",
+        {}
+      );
+    }
+
+    async function startFetchMyQuery() {
+      const { errors, data } = await fetchMyQuery();
+
+      if (errors) {
+        // handle those errors like a pro
+        console.error(errors);
+      }
+
+      // do something great with this precious data
+      //データ内容の表示
+      console.log("graphql connect")
+      console.debug(JSON.stringify(data))
+      console.log(data);
+    }
+    //GraphQLの取得
+    //startFetchMyQuery();
+
+
+    var config = {
+      apiKey: "AIzaSyCsOjFyAAuFr1CITcnufG-GpZBKpLgUP90",
+      authDomain: "rpa999-56929.firebaseapp.com",
+      databaseURL: "https://rpa999-56929.firebaseio.com",
+      projectId: "rpa999-56929",
+      storageBucket: "rpa999-56929.appspot.com",
+      messagingSenderId: "155298248089",
+      appId: "1:155298248089:web:e25d64dc9f5370c4"
+    };
+
+    firebase.initializeApp(config);
+
+    // データベースの参照を準備
+    var messagesRef = firebase.database().ref().child('messagess')
+    var messageFeed = document.getElementById("message-feed");
+    //検索したデータを表示する
+    //データが一致した物の検索
+    function selectdb() {
+      firebase.database().ref('/messagess')
+        .orderByChild('name').startAt('aaa').endAt('aaa\uf8ff')
+        .once('value', function (snapshot) { console.log(snapshot.val()) })
+
+    }
+
+    /*******************************************************************************
+     * 検索用のIFRAME
+     */
+    function searchfirebase(word){
+    
+      firebase.database().ref('/messagess/search')
+    .orderByChild('name').startAt(word).endAt(word+'\uf8ff')
+    .once('value',function(snapshot) {
+    //データの取得
+    dd =  snapshot.val()
+    /**
+     * キーとバリューの内容で記載する
+     */
+    Object.keys(dd).forEach(function (key) {
+      console.log("-------------------------------------" + key + "は" + dd[key] + "と鳴いた！");
+      Object.keys(dd[key]).forEach(function (keys) {
+        //console.log(keys + "は" + dd[key][keys] + "と鳴いた！");
+        console.log(keys + "は" + dd[key][keys] + "と鳴いた！");
+
+        if (keys == "text") {
+          var messagesRef = firebase.database().ref().child('messagess')
+          messagesRef.push({
+            title: "title",
+            name: word,
+            text: dd[key][keys]
+          });
+
+        }
+
+      })
+    });
+
+    snapshot.forEach(function (element) {
+      console.log(element);
+    });
+
+  /*console.log(snapshot.val())
+   	var messagesRef = firebase.database().ref().child('messagess')
+			                    messagesRef.push({
+				                    name: "messages",
+				                    text: JSON.stringify(snapshot.val())
+			                    });*/
+  
+  })
+}
+
+    //dataが変更の場合
+    messagesRef.on('child_changed', function (data) {
+      //alert("data changed")
+      console.log("data changed ")
+      //  alert(data.key)
+      //alert(JSON.stringify(data.val()));
+      var msg = data.val();
+      //alert(msg.name)
+      //alert(msg.body)
+      var lg = JSON.stringify(msg)
+      //alert("558 chat.html")
+      //alert(lg)
+      //     var msg = snapshot.val();
+      //           $('<li>').text(""+msg.name + ': ' + msg.body).prependTo('#messages');
+      //        $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body+ '</h3><p>Today</p></div>');
+      //    messageFeed.scrollTop = messageFeed.scrollHeight;
+      //          timedResponse();
+      //location.reload()
+      //alert(lg)
+      //  alert(lg)
+      //setCommentValues(postElement, data.key, data.val().text, data.val().author);
+      //       $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+      //     $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>ｓ' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+
+      //   timedResponse();
+    });
+
+    word = {
+      "スクリプト": `
+チェンジの場合と　ADDの場合
+ーーーーーーーーーーーーーーーーーーーーーー
+　messagesRef.on('child_changed', function (data) {
+  <a href="aaaaa">google</a>
+`,
+      "一覧": `
+ちんこ　チェンジの場合と　ADDの場合
+ーーーーーーーーーーーーーーーーーーーーーー
+　messagesRef.on('child_changed', function (data) {
+  <a href="aaaaa">google</a>
+`,
+      "画面": `
+画面　チェンジの場合と　ADDの場合
+ーーーーーーーーーーーーーーーーーーーーーー
+　messagesRef.on('child_changed', function (data) {
+  <a href="aaaaa">google</a>
+`,
+
+    }
+    let res_word = ""
+    // 既存メッセージを表示 firabase
+    // snapshot にFiraBaseのデータが入る　入る　データ　FiraBase　へ　スナップショット
+    // firabase DBの内容の値を表示する
+    messagesRef.on('child_added', function (snapshot) {
+      //GraphQL
+      //startFetchMyQuery();
+      var msg = snapshot.val();
+      //alert("start")
+      try {
+        //$('#message-feed').append(word[msg.text])
+        res_word = word[msg.text]
+      } catch (e) {
+        res_word = "";
+        console.log(e)
+      }
+      //alert(JSON.stringify(msg))
+      $('<li>').text("" + msg.name + ': ' + msg.text).prependTo('#messages');
+      $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.text + '</h3><p>Today</p></div>');
+      messageFeed.scrollTop = messageFeed.scrollHeight;
+      //timedResponse();
+
+    });
+
+    //検索
+    //書き出し
+
+
+    $('#message-input').click(function () {
+      //window.parent.document.getElementsByClassName("script-application-sidebar")[0].style.width='100px';
+      // 新規メッセージを投稿
+      ws = $('#message-input').val()
+      console.log(ws)
+
+
+      //		var messagesRef = firebase.database().ref().child('messagess')
+      //			messagesRef.push({
+      //				name: $('#message-input').val(),//
+      //				text: $('#message-input').val()
+      //		});
+
+
+
+      if (ws != "")
+        searchfirebase(ws)
+
+      //alert($('#message').val())
+
+      google.script.run.execGAS(1, $('#message').val())
+    });
+
+
+
+
+
+
+    $('#message-input').dblclick(function () {
+      //alert("dbclick")
+      //window.parent.document.getElementsByClassName("script-application-sidebar")[0].style.width='100px';
+      // 新規メッセージを投稿
+      ws = $('#message-input').val()
+      //console.log(ws)
+      /***************************************************
+      //登録データがあった場合　CasE　Theare　is registring data
+      ***************************************************/
+      if (ws != "") {
+        var messagesRef = firebase.database().ref().child('messagess/search')
+        messagesRef.push({
+          name: $('#message-input').val(),
+          text: $('#message-input').val()
+        });
+      }
+      //searchfirebase(ws)
+      //alert($('#message').val())
+      //	google.script.run.execGAS(1, $('#message').val())
+    });
+
+
+    $('#inputcode').dblclick(function () {
+      // alert("dblclick")
+      //alert("dbclick")
+      //window.parent.document.getElementsByClassName("script-application-sidebar")[0].style.width='100px';
+      // 新規メッセージを投稿
+      ws = $('#inputcode').val()
+      alert(ws)
+      //console.log(ws)
+      /***************************************************
+      //登録データがあった場合　CasE　Theare　is registring data
+      ***************************************************/
+      if (ws != "") {
+        var messagesRef = firebase.database().ref().child('messagess')
+        messagesRef.push({
+          name: $('#inputcode').val(),
+          text: $('#inputcode').val()
+        });
+      }
+      //searchfirebase(ws)
+      //alert($('#message').val())
+      //	google.script.run.execGAS(1, $('#message').val())
+    });
+
+//DHTMLで画面を表示する場合
+    /*
+          var main_layout = new dhtmlXLayoutObject(document.body, '1C');
+          var a = main_layout.cells('a');
+          var toolbar_1 = a.attachToolbar();
+    toolbar_1.setIconsPath('https://dhtmlx.com/docs/products/visualDesigner/live/preview/codebase/imgs/');
+      var obj2 =
+  
+    toolbar_1.loadStruct('https://dhtmlx.com/docs/products/visualDesigner/live/preview/data/toolbar.xml', function() {});
+             var objidbot = document.getElementById("chatobj");
+  a.attachObject(objidbot);
+  */
+  </script>
+
+
+
+
+
+  <script type="text/javascript">
+    //<![CDATA[
+
+    // 動画の操作
+    const stopButton = document.getElementById('stopMovie')
+    const pauseButton = document.getElementById('pauseMovie')
+    const playButton = document.getElementById('playMovie')
+
+    stopButton.addEventListener('click', () => {
+      player.stopVideo()
+    })
+
+    pauseButton.addEventListener('click', () => {
+      player.pauseVideo()
+    })
+
+    playMovie.addEventListener('click', () => {
+      player.playVideo()
+    })
+
+    function setyoutube() {
+
+    }
+    /*
+$.getScript('//www.youtube.com/iframe_api');
+
+     var player;
+     function onYouTubePlayerAPIReady() {
+         player = new YT.Player('player', {
+           height: '390',
+           width: '500',
+           videoId: 'H96v_oLZPdI',
+             playerVars: { 'start': 159, 'autoplay': 1, 'controls': 1, 'showinfo': 0, 'rel': 0 },
+           events: {
+             'onReady': onPlayerReady,
+             'onStateChange': onPlayerStateChange,
+           }
+             
+         });         
+     }
+*/
+    // IFrame API Playerを読み込む
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // APIコードが読み込まれた後に、YouTube Playerを作成する
+    let player;
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('player', { // playerはiframeに置き換えるdivタグのid
+        height: '560', // プレイヤーの高さ
+        width: '640', // プレイヤーの幅
+      });
+    }
+
+    const url = document.getElementById('url');
+    let videoId;
+    // url入力フォームの入力されたイベントを監視
+    url.addEventListener('input', () => {
+      // urlのv=以降が動画id
+      videoId = url.value.split('v=')[1];
+      // 正しいurlの形式だったとき
+      if (videoId) {
+        // &=クエリパラーメターがついていることがあるので取り除く
+        const ampersandPosition = videoId.indexOf('&');
+        if (ampersandPosition != -1) {
+          videoId = videoId.substring(0, ampersandPosition);
+        }
+      }
+      // 指定さらた動画IDのサムネイルを読み込み、動画を再生する準備をする。
+      player.cueVideoById({ videoId: videoId });
+    });
+
+
+    function onPlayerStateChange(evt) {
+      if (evt.data == 1) {
+        // this will seek to a certain point when video starts
+        // but you're better off using 'start' parameter
+        // player.seekTo(22);   
+      }
+    }
+
+    function onPlayerReady(evt) {
+
+      // doesn't work here
+      // player.seekTo(30);  
+
+      // lets make ure we have a function
+      //alert("typeof(player.SeekTo) = " + typeof(player.seekTo));
+    }
+    //video sheek
+    $(function () {
+
+      $(document).on('click', '#btnSeek', function () {
+        player.seekTo($(this).data('seek'), true);
+      });
+    });
+
+
+
+  //]]>
+  </script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent) {
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "mpgdmnfw"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+  <script>
+    //こんなの書いたかな
+    let allLines = []
+
+    window.addEventListener("message", (message) => {
+      if (message.data.console) {
+        let insert = document.querySelector("#insert")
+        allLines.push(message.data.console.payload)
+        insert.innerHTML = allLines.join(";\r")
+
+        let result = eval.call(null, message.data.console.payload)
+        if (result !== undefined) {
+          console.log(result)
+        }
+      }
+    })
+  </script>
+  <script>
+    // alert("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base target="_top">
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"
+		integrity="sha256-FiZMk1zgTeujzf/+vomWZGZ9r00+xnGvOgXoj0Jo1jA=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.5.2/redux.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-with-addons.js" type="text/javascript">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/4.4.5/react-redux.js" type="text/javascript">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js" type="text/javascript">
+	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.4/umd/react.production.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.4/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reactstrap/4.8.0/reactstrap.min.js" ></script>
+    <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js" type="text/javascript"></script>
+	<?!= getContent('src/react/components/component1') ?>
+	<?!= getContent('src/react/components/component2') ?>
+	<?!= getContent('src/react/containers/announcementsContainer') ?>
+	<?!= getContent('src/react/react-container') ?>
+	<?!= getContent('src/React') ?>
+    <meta charset='UTF-8'>
+    <script src='https://unpkg.com/react@16.3.1/umd/react.production.min.js'></script>
+    <script src='https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+  </head>
+  <body>
+    <div id='root'></div>
+    <script type='text/babel'>
+      const Link = ReactRouterDOM.Link,
+            Route = ReactRouterDOM.Route;
+
+      const App = props => (
+        <ReactRouterDOM.HashRouter>
+          <ul>
+            <li><Link to="/">TO HOME</Link></li>
+            <li><Link to="/a">TO A</Link></li>
+            <li><Link to="/b">TO B</Link></li>
+          </ul>
+
+          <Route path="/" exact component={Home} />
+          <Route path="/a" component={A} />
+          <Route path="/b" component={B} />
+        </ReactRouterDOM.HashRouter>
+      )
+
+      const Home = props => <h1>
+      HOME ここで考えるよりは　ここでどうするかチャットと話す
+      話したら画面が変わるようにする
+      <div>aaaaaaaaaaaaaaaa</div>
+      </h1>
+      const A = props => <h1>A</h1>
+      const B = props => <h1>B</h1>
+
+      ReactDOM.render(<App />, document.querySelector('#root'));
+    </script>
+  </body>
+</html>

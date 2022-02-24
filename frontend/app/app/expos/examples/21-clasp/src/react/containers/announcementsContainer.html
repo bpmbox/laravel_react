@@ -1,0 +1,47 @@
+<script type="text/babel">
+  class Announcement extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        firstMessage: "Initial Message",
+        secondMessage: "",
+        thirdMessage: ""
+      }
+      this.setSecondMessage = this.setSecondMessage.bind(this);
+      this.getThirdMessage = this.getThirdMessage.bind(this);
+      this.setThirdMessage = this.setThirdMessage.bind(this);
+    }
+      
+    componentDidMount() {
+      google.script.run.withSuccessHandler(this.setSecondMessage).getSecondAnnouncement();
+    }
+    
+    setSecondMessage(value) {
+      console.log(value);
+      this.setState({secondMessage: value});
+    }
+      
+    getThirdMessage() {
+      google.script.run.withSuccessHandler(this.setThirdMessage).getThirdAnnouncement();
+    }
+      
+    setThirdMessage(value) {
+      console.log(value);
+      this.setState({thirdMessage: value});
+    }
+      
+    render () {
+      return (
+        <div>
+          <h1>Example - Initial State</h1>
+          ------------------------------------------------------
+          <p>{this.state.firstMessage}</p>
+          <Component1 />
+          <p>{this.state.secondMessage}</p>
+          <Component2 value2="222222"/>
+          <button type="button" onClick={this.getThirdMessage}>Get Message!</button>
+        </div>
+      );
+    }
+  }
+</script>

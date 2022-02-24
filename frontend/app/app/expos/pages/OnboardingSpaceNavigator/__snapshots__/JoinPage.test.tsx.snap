@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JoinPage should join space and redirect to it 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ScrollView
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    scrollable={true}
+    style={
+      Array [
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Switch Account"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Switch Account
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-B",
+              "fontSize": 17,
+              "fontWeight": "700",
+              "lineHeight": 27.200000000000003,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+              "textAlign": "left",
+            }
+          }
+        >
+          Spaces you've been invited to
+        </Text>
+      </View>
+    </View>
+    <TouchableOpacity
+      activeOpacity={0.95}
+      disabled={false}
+      onPress={[Function]}
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 100,
+            "maxWidth": "100%",
+          }
+        }
+        testID="SelectSpace_112233"
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#00000000",
+              "borderColor": "#EAEAEA",
+              "borderRadius": 7,
+              "borderWidth": 0.5,
+              "height": 68,
+              "left": 16,
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": 68,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+                }
+              }
+              style={
+                Array [
+                  Object {
+                    "height": 68,
+                    "width": 68,
+                  },
+                  Object {
+                    "borderRadius": 7.4375,
+                  },
+                ]
+              }
+            />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={false}
+            style={
+              Object {
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 25.5,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 100,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            Space One
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 44,
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={false}
+          style={
+            Object {
+              "color": "#777777",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 14.875,
+              "fontWeight": "400",
+              "lineHeight": 22.3125,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          Using account: jonsnow@winterfell.com
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+          },
+          Object {
+            "height": 0,
+          },
+          undefined,
+        ]
+      }
+    />
+  </ScrollView>
+</SafeAreaView>
+`;

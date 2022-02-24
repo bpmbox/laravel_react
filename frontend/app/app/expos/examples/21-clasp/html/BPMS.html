@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base target="_top">
+	<!-- Use a templated HTML printing scriptlet to import common stylesheet -->
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+	<?!= HtmlService.createHtmlOutputFromFile('css/Stylesheet').getContent(); ?>
+</head>
+
+<body>
+	eeeeeeeeee
+	<?!= //HtmlService.createTemplateFromFile("vue2").evaluate();?>
+	eeeeeeeeeeee
+	<script>
+		var config = {
+                apiKey: "AIzaSyCsOjFyAAuFr1CITcnufG-GpZBKpLgUP90",
+                authDomain: "rpa999-56929.firebaseapp.com",
+                databaseURL: "https://rpa999-56929.firebaseio.com",
+                projectId: "rpa999-56929",
+                storageBucket: "rpa999-56929.appspot.com",
+                messagingSenderId: "155298248089",
+                appId: "1:155298248089:web:e25d64dc9f5370c4"
+            };
+
+            firebase.initializeApp(config);
+
+            // データベースの参照を準備
+            var messagesRef = firebase.database().ref().child('messages')
+            var messageFeed = document.getElementById("message-feed");
+
+
+            messagesRef.on('child_changed', function(data) {
+                console.log("data chaggede htmlBPMS.html")
+
+                //    alert("data changed")
+                //  alert(data.key)
+                //alert(JSON.stringify(data.val()));
+                var msg = data.val();
+                //alert(msg.name)
+                //alert(msg.body)
+                var lg = JSON.stringify(msg)
+                console.log(lg)
+                // alert(lg)
+                //     var msg = snapshot.val();
+                //           $('<li>').text(""+msg.name + ': ' + msg.body).prependTo('#messages');
+                //        $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body+ '</h3><p>Today</p></div>');
+                //    messageFeed.scrollTop = messageFeed.scrollHeight;
+                //          timedResponse();
+                //location.reload()
+                //alert(lg)
+                //  alert(lg)
+                //setCommentValues(postElement, data.key, data.val().text, data.val().author);
+                //       $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+                //     $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>ｓ' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+
+                //   timedResponse();
+            });
+
+
+
+            // 既存メッセージを表示
+            messagesRef.on('child_added', function(snapshot) {
+                var msg = snapshot.val();
+                $('<li>').text("" + msg.name + ': ' + msg.body).prependTo('#messages');
+                $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+                messageFeed.scrollTop = messageFeed.scrollHeight;
+                timedResponse();
+
+            });
+
+
+            $('#send').click(function() {
+                // 新規メッセージを投稿
+                var messagesRef = firebase.database().ref().child('messages')
+                messagesRef.push({
+                    name: $('#name').val(),
+                    body: $('#message').val()
+                });
+                alert($('#message').val())
+                google.script.run.execGAS(1, $('#message').val())
+            });
+	</script>
+
+	<script>
+		// 現在表示されているページをリロードする
+            //location.reload();
+
+            // 例: 5秒に一回リロード
+            //setTimeout("location.reload()",5000);
+	</script>
+
+	<!-- Below is the HTML code that defines the sidebar element structure. -->
+	<div class="sidebar branding-below">
+		<a href="https://bpms.bpmboxes.com/sysworkflow/en/neoclassic/setup/main" target=_blunk>BPMSはこちら</a></br>
+		<a href="https://bpms.bpmboxes.com/sysworkflow/en/neoclassic/setup/main" target=_blunk>DRIVEはこちら</a></br>
+
+		<a href="https://dev.bpmboxes.com/sysworkflow/en/neoclassic/9635095775a1701fcd8c2a4010874341/3629020315a36cea971e988095272522.php"
+			target=_blunk>登録画面作成はこちら</a></br>
+		<a href="https://dev.bpmboxes.com/sysworkflow/en/neoclassic/9635095775a1701fcd8c2a4010874341/3629020315a36cea971e988095272522.php"
+			target=_blunk>登録画面作成はこちら</a></br>
+		<a href="https://chrome.google.com/webstore/detail/iframe-allow/gifgpciglhhpmeefjdmlpboipkibhbjg"
+			target=_blunk>CHROME IFRAM インストール</a>
+		<a href="https://www.bpmchat.com/" target=_blunk>GOOGLESITE BPMBOXES説明</a>
+		<p>
+			音声でフォーカスのあったセルに</br>登録します</br>
+			</br>
+			セレクトボックスで対応のシートを</br>選択してください</br>
+			<?
+//        var data = SpreadsheetApp
+//.getActiveSpreadsheet().getSheetByName('Sheet16').getDataRange()
+//.getValues();
+?>
+			<!-- セレクトボックス　スタート /-->
+			<select name='alphabet'>
+<?
+//output.append(e.parameter.p1);
+function PutLinks()
+{
+  // スプレッドシート内の全シートとスプレッドシートのID
+  var sheets = SpreadsheetApp.getActive().getSheets();
+  var ssId = SpreadsheetApp.getActive().getId();
+
+  // ハイパーリンク文字列の配列
+  var linkList = [[]];
+
+  for(var i=0; i<sheets.length; i++) {
+    // シートのIDと名前
+    var sheetId = sheets[i].getSheetId();
+    var sheetName = sheets[i].getSheetName();
+    output.append('<option value="'+sheetName+'">'+sheetName+"</option>")
+//<option value="mercedes">Mercedes</option>
+    // シートのURLからハイパーリンク文字列を組み立て
+    var url = "https://docs.google.com/spreadsheets/d/" + ssId + "/edit#gid=" + sheetId;
+    var link = [ '=HYPERLINK("' + url + '","' + sheetName + '")' ];
+
+    // ハイパーリンク文字列を配列に格納
+    linkList[i] = link;
+  }
+
+  // 選択中のセルにハイパーリンク文字列を入れる
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var cell = sheet.getActiveCell();
+  var range = sheet.getRange(cell.getRow() , cell.getColumn() ,  linkList.length , 1);
+  //range.setValues(linkList);
+}
+PutLinks()
+?>
+</select>
+			<!-- セレクトボックス　スタート /-->
+			<? //for (var i = 0; i < data.length; i++) { ?>
+			<? //if(data[i][0]){ ?>
+
+			<? //for (var j = 0; j < data[i].length; j++) { ?>
+			<? //output.append(data[i][j])  ?>
+			<? //} ?>
+
+			<? //} ?>
+			<? //} ?>
+
+		</p>
+
+
+		<!--
+       <div class="block" id="sidebar-value-block">
+       <label for="sidebar-value">作業:DATABASE関連</label>
+       <div>
+        <button id="bot_createCase">作業登録</button>
+          </div>
+      </div>
+      /-->
+
+		<div class="block form-group" id="sidebar-value-block">
+			<label for="sidebar-value">作業番号:</label>
+			<!--<input id="sidebar-value" value="1">-->
+			<textarea id="sidebar-seq" placeholder="作業番号..." value="word"></textarea>
+		</div>
+
+		<div class="block" id="sidebar-value-block">
+			<label for="sidebar-value">作業:BPMS関連</label>
+			<div>
+				<button id="createCase">作業登録</button>
+				<button id="sendVariables">データ更新</button>
+				<button id="getVariables">作業取得</button>
+				<button id="routeCase">作業を進める</button>
+
+			</div>
+		</div>
+		<div class="block" id="sidebar-value-block">
+			<label for="sidebar-value">作業:BPMS関連</label>
+			<div>
+				<button id="routeCase">作業を進める</button>
+			</div>
+		</div>
+
+		<div id="sidebar-status"></div>
+		<a href="https://chat.bpmboxes.com/phprunner/PMT_SPREADMAIN_list.php" target=_blunk>登録データの確認はこちら</a></br>
+		<a href="https://dev.bpmboxes.com/sysworkflow/en/neoclassic/cases/main" target=_blunk>BPMSでの業務ナビゲートはこちら</a></br>
+		<!--
+       <div class="block form-group" id="sidebar-value-block">
+        <label for="sidebar-value">メールTO:</label>
+        <input id="sidebar-value" value="1">
+        <textarea id="sidebar-seq" placeholder="メールTO..." value="word"></textarea>
+      </div>
+       <div class="block form-group" id="sidebar-value-block">
+        <label for="sidebar-value">メールFROM:</label>
+        <input id="sidebar-value" value="1">
+        <textarea id="sidebar-seq" placeholder="メールFROM..." value="word"></textarea>
+      </div>
+      /-->
+
+
+		<div class="block form-group" id="sidebar-value-block">
+			<label for="sidebar-value">音声:サジェスト機能の追加予定</label>
+
+			<textarea id="sidebar-value" placeholder="Message..." value="word"></textarea>
+			<textarea id="status" placeholder="Message..." value=""></textarea>
+		</div>
+		スプレッドシートセル関連
+		<div class="block" id="sidebar-button-bar">
+			<button id="sidebar-pull-button">データ取得</button>
+			<button id="sidebar-put-button">データ登録</button>
+		</div>
+		<div class="block" id="sidebar-button-bar">
+			データベース関連 シートにS列以上のデータがある場合エラーとなります
+			<a href="https://chat.bpmboxes.com/phprunner/PMT_SPREADMAIN_list.php">取得出切るデータの確認</a>
+			<button id="sidebar-dataup-buttonup">スプレッドシートをデータベースに登録</button>
+		</div>
+		<div class="block" id="sidebar-button-bar">
+			<button id="sidebar-dataup-buttondown">データベースからスプレッドシートに取得</button>
+		</div>
+
+		<!--
+      <div class="block" id="sidebar-button-bar_mail">
+        <button id="sidebar-dataup-button">スプレッドシートの内容をメール送信</button>
+      </div>
+      /-->
+		<div class="block" id="sidebar-value-block">
+			<!-- セレクトボックス　スタート /-->
+			<select name='QAsheet'>
+<?
+//output.append(e.parameter.p1);
+function PutLinks()
+{
+  // スプレッドシート内の全シートとスプレッドシートのID
+  var sheets = SpreadsheetApp.getActive().getSheets();
+  var ssId = SpreadsheetApp.getActive().getId();
+
+  // ハイパーリンク文字列の配列
+  var linkList = [[]];
+
+  for(var i=0; i<sheets.length; i++) {
+    // シートのIDと名前
+    var sheetId = sheets[i].getSheetId();
+    var sheetName = sheets[i].getSheetName();
+    output.append('<option value="'+sheetName+'">'+sheetName+"</option>")
+//<option value="mercedes">Mercedes</option>
+    // シートのURLからハイパーリンク文字列を組み立て
+    var url = "https://docs.google.com/spreadsheets/d/" + ssId + "/edit#gid=" + sheetId;
+    var link = [ '=HYPERLINK("' + url + '","' + sheetName + '")' ];
+
+    // ハイパーリンク文字列を配列に格納
+    linkList[i] = link;
+  }
+
+  // 選択中のセルにハイパーリンク文字列を入れる
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var cell = sheet.getActiveCell();
+  var range = sheet.getRange(cell.getRow() , cell.getColumn() ,  linkList.length , 1);
+  //range.setValues(linkList);
+}
+PutLinks()
+?>
+</select>
+			<!--
+
+        <textarea id="chat-key" placeholder="キー..." value="word"></textarea>
+      </div>
+       <div class="block form-group" id="chatroomid">
+        <label for="sidebar-value">ルームID</label>
+
+        <textarea id="chat-roomid" placeholder="ルームID..." value="word"></textarea>
+      </div>
+      <div></div>
+      </div>
+      <div class="block" id="sidebar-dataup-chatwork">
+        <button id="sidebar-dataup-chatwork">チャットワーク設定</button>
+      </div>
+      <div class="block" id="sidebar-button-send">
+        <button id="sidebar-send-chatwork">チャットワークへ送信</button>
+      </div>
+-->
+			<!-- セレクトボックス　スタート /-->
+
+		</div>
+
+		<!-- Enter sidebar bottom-branding below. -->
+		<div class="sidebar bottom">
+			<img alt="Add-on logo" class="logo" width="25" src="https://googledrive.com/host/0B0G1UdyJGrY6XzdjQWF4a1JYY1k/apps-script_2x.png">
+			<span class="gray branding-text">Spreadsheet Add-on Template by Google</span>
+		</div>
+
+		<!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+		<?!= HtmlService.createHtmlOutputFromFile('js/SidebarJavaScript').getContent(); ?>
+		<?
+/*
+var dataXml = SpreadsheetApp.getActive()
+//.openById('1IvJUL7faubds4VsWxysaBTGOGJ0X-qmOgUeyJa5xZVI')
+.getSheetByName('XML')
+.getDataRange()
+.getValues();
+
+// XMLをパース
+  var xml = XmlService.parse(dataXml[0][0]);
+  var rootDoc = xml.getRootElement()
+  
+  var nsSoapenv = XmlService.getNamespace("x", "http://schemas.microsoft.com/winfx/2006/xaml");
+ var nsSoapenv1 = XmlService.getNamespace("","http://schemas.microsoft.com/netfx/2009/xaml/activities")
+ var sco = XmlService.getNamespace("sco","clr-namespace:System.Collections.ObjectModel;assembly=mscorlib")
+  // 各データの要素を取得
+  var entries = rootDoc.getChildren("Members",nsSoapenv)[0]//[0].getChild("String",nsSoapenv)//.getChildren("Property",nsSoapenv);
+
+var entries = rootDoc.getChildren("TextExpression.NamespacesForImplementation")
+output.append(entries)
+  // 要素数を取得
+  var length = entries.length;
+  output.append("length = "+length)
+//output.append(entries.getText()) 
+  // 取得したデータをループさせる
+  for(var i = 0; i < length; i++) {
+    // 記事タイトル
+//output.append(entries[i].getText())
+    
+    var title = entries[i].getChildText("Name");
+ output.append(title)
+    // ログに出力
+    Logger.log(title);
+  }
+
+
+//output.append(dataXml[0][0])
+
+*/
+
+
+?>
+
+
+		<? var data = SpreadsheetApp.getActive()
+//.openById('1IvJUL7faubds4VsWxysaBTGOGJ0X-qmOgUeyJa5xZVI')
+.getSheetByName('HTML')
+.getDataRange()
+.getValues();
+var ken="";
+?>
+		<?=ken?>
+		<?=ken?>
+		<?
+//output.append(e.parameter.p1);
+?>
+
+		<? for (var i = 0; i < data.length; i++) { ?>
+		<? //if(data[i][0]){ ?>
+
+		<? for (var j = 0; j < data[i].length; j++) { ?>
+		<? output.append(data[i][j])  ?>
+		<? } ?>
+
+		<? //} ?>
+		<? } ?>
+
+		<?
+ function getEval(data){
+ return eval(data)
+ }
+ ?>
+
+		<?=//getEval(1111);?>
+
+</body>
+
+</html>

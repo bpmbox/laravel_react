@@ -1,0 +1,2566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateJoinSpacePage selecting Back to My Spaces should redirect to Main 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  You do not have access to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  . Please contact an admin to grant you access.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="BackToSpacesButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Back to My Spaces"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Back to My Spaces
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="LoginAsDifferentUserButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Switch Account"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#00000000",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Switch Account
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage selecting Switch User should redirect to Login with redirect to slug parameter set 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  You do not have access to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  . Please contact an admin to grant you access.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="BackToSpacesButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Back to My Spaces"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Back to My Spaces
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="LoginAsDifferentUserButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Switch Account"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#00000000",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Switch Account
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display buttons to switch account or back to spacesif user was not invited 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  You do not have access to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  . Please contact an admin to grant you access.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="BackToSpacesButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Back to My Spaces"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Back to My Spaces
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="LoginAsDifferentUserButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Switch Account"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#00000000",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#000000",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Switch Account
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display continue to space button if already member. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  You are already a member of Space One.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="GoToSpaceButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Continue to Space One"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Continue to Space One
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display error alert message on join error. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  Welcome to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 20.1875,
+                          "lineHeight": 30.28125,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                   on Tree.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="ConfirmJoinButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Join Space One"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Join Space One
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display join space buttin if user is invited. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  Welcome to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 20.1875,
+                          "lineHeight": 30.28125,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                   on Tree.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="ConfirmJoinButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Join Space One"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Join Space One
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display loading screen while authentication is initailizing. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    center={true}
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      <ActivityIndicator
+        animating={true}
+        color="#CCCCCC"
+        hidesWhenStopped={true}
+        size="large"
+      />
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should display loading screen while spaces is fetching. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    center={true}
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          undefined,
+        ]
+      }
+    >
+      <ActivityIndicator
+        animating={true}
+        color="#CCCCCC"
+        hidesWhenStopped={true}
+        size="large"
+      />
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`CreateJoinSpacePage should join space when Join Space button is clicked. 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+    verticalCenter={true}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 100,
+          "justifyContent": "center",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderColor": "#00000000",
+            "borderRadius": 7,
+            "borderWidth": 0.5,
+            "height": 68,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": 68,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 68,
+                "width": 68,
+              },
+              Object {
+                "borderRadius": 7.4375,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Baratheon-icon.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 68,
+                  "width": 68,
+                },
+                Object {
+                  "borderRadius": 7.4375,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  Welcome to 
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={false}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 20.1875,
+                          "lineHeight": 30.28125,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "center",
+                        },
+                      ]
+                    }
+                  >
+                    Space One
+                  </Text>
+                </Text>
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 20.1875,
+                        "lineHeight": 30.28125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                   on Tree.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+      testID="ConfirmJoinButton"
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Join Space One"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Join Space One
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;

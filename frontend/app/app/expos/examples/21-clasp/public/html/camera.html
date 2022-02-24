@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base target="_top">
+	<?!= HtmlService.createHtmlOutputFromFile('public/css/css').getContent(); ?>
+</head>
+
+<body>
+	<?!= HtmlService.createHtmlOutputFromFile('public/js/js').getContent(); ?>
+
+	<!DOCTYPE html>
+	<html>
+	<title>W3.CSS Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+	<style>
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			font-family: "Poppins", sans-serif
+		}
+
+		body {
+			font-size: 16px;
+		}
+
+		img {
+			margin-bottom: -8px;
+		}
+
+		.mySlides {
+			display: none;
+		}
+	</style>
+
+	<body class="w3-content w3-black" style="max-width:1500px;">
+		<?
+ //var sheet=SpreadsheetApp.openById("1D1w6qkvI3A1DeLqZ_5EBovrHWnZ_wDIvviMwHZFX<zFA")
+  var height = 200//sheet.getRange('B57').getValue()
+  var width = 200//heet.getRange('B58').getValue()
+  var debug = 1;
+?>
+		<a href="https://script.google.com/a/bpm999.com/macros/s/AKfycbxkmAdEIpUrOj8jiCux6e5xA9urkXHNIAzVM5YmBVA/dev"
+			target=_blunk>capture</a>
+		カメラの幅<?=width?>sssカメラの高さ<?=height?>
+		<!-- Header with Slideshow -->
+		<header class="w3-display-container w3-center">
+			<button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+			<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>ビデオ<br/>
+			<!--
+<div id="wrapper">
+
+ 
+<video id="video" autoplay width="500" height="300"></video><br/>
+  <div id="wrapper2">
+	<button id="capture">撮影</button>
+	<button id="stop">撮影ストップ</button>
+   <div id="app">
+      {{ message }}
+    </div>
+
+		<p><input type="button" value="Canvasクリア" id="clear"></p>
+	<br/>
+	<div id="capture_images">
+	画像<br/>
+		<img id="img" src="" width="800" height="700"/><br/>Canvas <br/>
+		<canvas id="canvas" width="800" height="700"></canvas>
+			<pre id="log"></pre>
+        <br/>
+    </div>
+  </div>
+</div>
+//-->
+
+			<div class="mySlides w3-animate-opacity">
+				<img class="w3-image" src="https://www.w3schools.com/w3images/app.jpg" alt="Image 1" style="min-width:500px" width="960">
+				<div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+					<div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+						<h1 class="w3-xlarge">Take photos with our app</h1>
+						<hr class="w3-opacity">
+						<p>Super simple installment: free of charge</p>
+						<p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="mySlides w3-animate-opacity">
+				<div id="message-feed"></div>
+				<div id="wrapper">
+
+
+					<video id="video" autoplay width=<?=width?> height=<?=height?>></video><br/>
+					<script>
+						var element = document.getElementById("video");
+var width = element.videoWidth;
+		var height = element.videoHeight;
+        
+       // alert(width);
+       // alert(height);
+					</script>
+					<div id="wrapper2">
+						<button id="capture">撮影</button>
+						<button id="imgSize">画像サイズ変更</button>
+						<button id="stop">撮影ストップ</button>
+						<div id="app">
+							{{ message }}
+						</div>
+
+						<p><input type="button" value="Canvasクリア" id="clear"></p>
+							<br/>
+							<div id="capture_images">
+								画像<br/>
+								<img id="img" src="" width="<?=width?>" height="<?=height?>"/><br/>Canvas <br/>
+								<canvas id="canvas" width="<?=width?>" height="<?=height?>"></canvas>
+								<pre id="log"></pre>
+								<br/>
+    </div>
+							</div>
+					</div>
+					<img class="w3-image" src="https://www.w3schools.com/w3images/app.jpg" alt="Image 2" style="min-width:500px" width=<?=width?> height=<?=height?>>
+					<div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+						<div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+							<h1 class="w3-xlarge w3-text-red"><b>CLICK!</b> Fast and Easy</h1>
+							<hr class="w3-opacity">
+							<p>Choose from thousands of features</p>
+							<p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="mySlides w3-animate-opacity">
+					<img class="w3-image" src="https://www.w3schools.com//w3images/app4.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+					<div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+						<div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+							<h1 class="w3-xlarge">Smart Design</h1>
+							<hr class="w3-opacity">
+							<p>Customize photos as you go</p>
+							<p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey"
+					onclick="plusDivs(1)">カメラを撮影する <i class="fa fa-angle-right"></i></a>
+				<a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour
+					<i class="fa fa-angle-right"></i></a>
+		</header>
+		<div id="wrapper">
+
+
+
+			<!-- The App Section -->
+			<div class="w3-padding-64 w3-white">
+				<div class="w3-row-padding">
+					<div class="w3-col l8 m6">
+						<h1 class="w3-jumbo"><b>The App</b></h1>
+						<h1 class="w3-xxxlarge w3-text-green"><b>Why buy it?</b></h1>
+						<p><span class="w3-xlarge">Take photos like a pro.</span> You should buy this app because lorem
+							ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+							reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-download"></i> Download Application
+      </button>
+						<p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i>
+							<i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i>
+						</p>
+					</div>
+					<div class="w3-col l4 m6">
+						<img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+						<div class="w3-center w3-hide-large w3-hide-medium">
+							<button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+							<img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal -->
+				<div id="download" class="w3-modal w3-animate-opacity">
+					<div class="w3-modal-content" style="padding:32px">
+						<div class="w3-container w3-white">
+							<i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+							<h2 class="w3-wide">DOWNLOAD</h2>
+							<p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+							<i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i>
+							<i class="fa fa-windows w3-large"></i>
+							<p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+								<button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Clarity Section -->
+				<div class="w3-padding-64 w3-light-grey">
+					<div class="w3-row-padding">
+						<div class="w3-col l4 m6">
+							<img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App" width="335" height="471">
+    </div>
+							<div class="w3-col l8 m6">
+								<h1 class="w3-jumbo"><b>Clarity</b></h1>
+								<h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
+								<p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos
+									with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut
+									enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+									esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Features Section -->
+					<div class="w3-container w3-padding-64 w3-dark-grey w3-center">
+						<h1 class="w3-jumbo"><b>Features</b></h1>
+						<p>This app is just so lorem ipsum.</p>
+
+						<div class="w3-row" style="margin-top:64px">
+							<div class="w3-col s3">
+								<i class="fa fa-bolt w3-text-orange w3-jumbo"></i>
+								<p>Fast</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-heart w3-text-red w3-jumbo"></i>
+								<p>Loved</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-camera w3-text-yellow w3-jumbo"></i>
+								<p>Clarity</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-battery-full w3-text-green w3-jumbo"></i>
+								<p>Power</p>
+							</div>
+						</div>
+
+						<div class="w3-row" style="margin-top:64px">
+							<div class="w3-col s3">
+								<i class="fa fa-diamond w3-text-white w3-jumbo"></i>
+								<p>Sharp</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-cloud w3-text-blue w3-jumbo"></i>
+								<p>Cloud</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-globe w3-text-amber w3-jumbo"></i>
+								<p>Global</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-hdd-o w3-text-cyan w3-jumbo"></i>
+								<p>Storage</p>
+							</div>
+						</div>
+
+						<div class="w3-row" style="margin-top:64px">
+							<div class="w3-col s3">
+								<i class="fa fa-user w3-text-sand w3-jumbo"></i>
+								<p>Safe</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-shield w3-text-orange w3-jumbo"></i>
+								<p>Stabile</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-wifi w3-text-grey w3-jumbo"></i>
+								<p>Connected</p>
+							</div>
+							<div class="w3-col s3">
+								<i class="fa fa-image w3-text-pink w3-jumbo"></i>
+								<p>HD</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pricing Section -->
+					<div class="w3-padding-64 w3-center w3-white">
+						<h1 class="w3-jumbo"><b>Pricing</b></h1>
+						<p class="w3-large">Choose a pricing plan that fits your needs.</p>
+						<div class="w3-row-padding" style="margin-top:64px">
+							<div class="w3-half w3-section">
+								<ul class="w3-ul w3-card w3-hover-shadow">
+									<li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+									<li class="w3-padding-16"><b>250</b> Photos</li>
+									<li class="w3-padding-16"><b>10</b> Features</li>
+									<li class="w3-padding-16"><b>No</b> Ads</li>
+									<li class="w3-padding-16"><b>Office hours</b> Support</li>
+									<li class="w3-padding-16">
+										<h2 class="w3-opacity">$ 25</h2>
+									</li>
+									<li class="w3-light-grey w3-padding-24">
+										<button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
+									</li>
+								</ul>
+							</div>
+							<div class="w3-half w3-section">
+								<ul class="w3-ul w3-card w3-hover-shadow">
+									<li class="w3-red w3-xlarge w3-padding-32">Premium</li>
+									<li class="w3-padding-16"><b>1000</b> Photos</li>
+									<li class="w3-padding-16"><b>50</b> Features</li>
+									<li class="w3-padding-16"><b>No</b> Ads</li>
+									<li class="w3-padding-16"><b>Endless</b> Support</li>
+									<li class="w3-padding-16">
+										<h2 class="w3-opacity">$ 99</h2>
+									</li>
+									<li class="w3-light-grey w3-padding-24">
+										<button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<br>
+</div>
+
+						<!-- Footer -->
+						<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+							<div class="w3-section">
+								<i class="fa fa-facebook-official w3-hover-opacity"></i>
+								<i class="fa fa-instagram w3-hover-opacity"></i>
+								<i class="fa fa-snapchat w3-hover-opacity"></i>
+								<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+								<i class="fa fa-twitter w3-hover-opacity"></i>
+								<i class="fa fa-linkedin w3-hover-opacity"></i>
+							</div>
+							<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+									target="_blank" class="w3-hover-text-green">w3.css</a></p>
+						</footer>
+
+						<script>
+							// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+						</script>
+
+
+
+
+
+						<!-- generated by: jsdo.it - http: //jsdo.it/ScrapEnginer/bWMl -->
+						<!-- Copyright ScrapEnginer - http: //jsdo.it/ScrapEnginer -->
+						<!-- Licensed under MIT License - http: //www.opensource.org/licenses/mit-license.php -->
+
+
+						<script>
+							new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue.js!'
+  }
+});
+						</script>
+						<!--
+<h1>Recorder.js simple WAV export example</h1>
+<p>Make sure you are using a recent version of Google Chrome.</p>
+<p>Also before you enable microphone input either plug in headphones or turn the volume down if you want to avoid ear
+    splitting feedback!</p>
+<button onclick="startRecording(this);">record</button>
+<button onclick="stopRecording(this);" disabled>stop</button>
+<h2>Recordings</h2>
+<ul id="recordingslist"></ul>
+<h2>Log</h2>
+/-->
+
+
+
+						<script>
+							function __log(e, data) {
+        log.innerHTML += "\n" + e + " " + (data || '');
+    }
+
+    var audio_context;
+    var recorder;
+
+    function startUserMedia(stream) {
+        var input = audio_context.createMediaStreamSource(stream);
+        __log('Media stream created.'); // Uncomment if you want the audio to feedback directly
+        //input.connect(audio_context.destination);
+        //__log('Input connected to audio context destination.');
+       // recorder = new Recorder(input);
+        __log('Recorder initialised.');
+    }
+
+    function startRecording(button) {
+        recorder && recorder.record();
+        button.disabled = true;
+        button.nextElementSibling.disabled = false;
+        __log('Recording...');
+    }
+
+    /*
+        function stopRecording(button) {
+            recorder && recorder.stop();
+            button.disabled = true;
+            button.previousElementSibling.disabled = false;
+            __log('Stopped recording.'); // create WAV download link using audio data blob
+            createDownloadLink();
+
+            recorder.clear();
+        }
+        */
+    /*
+        function createDownloadLink() {
+            recorder && recorder.exportWAV(function (blob) {
+                var url = URL.createObjectURL(blob);
+                var li = document.createElement('li');
+                var au = document.createElement('audio');
+                var hf = document.createElement('a');
+
+                au.controls = true;
+                au.src = url;
+                hf.href = url;
+                hf.download = new Date().toISOString() + '.wav';
+                hf.innerHTML = hf.download;
+                li.appendChild(au);
+                li.appendChild(hf);
+                recordingslist.appendChild(li);
+            });
+        }
+        */
+
+    window.onload = function init() {
+        try {
+            // webkit shim
+            window.AudioContext = window.AudioContext || window.webkitAudioContext;
+            navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+            window.URL = window.URL || window.webkitURL;
+
+            audio_context = new AudioContext;
+            __log('Audio context set up.');
+            __log('navigator.getUserMedia ' + (navigator.getUserMedia ? 'available.' : 'not present!'));
+        } catch (e) {
+            alert('No web audio support in this browser!');
+        }
+
+        navigator.getUserMedia({
+            audio: true
+        }, startUserMedia, function (e) {
+            __log('No live audio input: ' + e);
+        });
+    };
+						</script>
+						<!-- <=require('public/js/camera');
+?>/-->
+						<script>
+							var video = document.getElementById('video');
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    var localMediaStream = null;
+
+    // --------------------
+    // Base64データをBlobデータに変換
+    // --------------------
+    // https://st40.xyz/one-run/article/133/
+    function Base64toBlob(base64) {
+        var tmp = base64.split(',');
+        var data = atob(tmp[1]);
+        var mime = tmp[0].split(':')[1].split(';')[0];
+        var buf = new Uint8Array(data.length);
+        for (var i = 0; i < data.length; i++) {
+            buf[i] = data.charCodeAt(i);
+        }
+        var blob = new Blob([buf], {type: mime});
+        return blob;
+    }
+
+    var cve = document.getElementById("canvas");
+
+    function jpegSave() {
+    }
+
+    // --------------------
+    //  ダウンロード開始
+    // --------------------
+    function DownloadStart() {
+        if (cve.getContext) {
+            var ctx = cve.getContext('2d');
+
+            // ダウンロード ファイル名
+            var fileName = "sample.png";
+
+            //  ダウンロード開始
+            if (window.navigator.msSaveBlob) {
+                // IE
+                // base64データをblobに変換してダウンロード
+                window.navigator.msSaveBlob(Base64toBlob(base64), fileName);
+            } else {
+                // Chrome, Firefox, Edge
+                // aタグをクリックしてダウンロード開始
+                document.getElementById("dlImg").click();
+            }
+        }
+    }
+
+    var hasGetUserMedia = function () {
+        return (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
+    }
+
+
+    var onFailSoHard = function (e) {
+            console.log('aaaa', e);
+        }
+
+    ;
+    //https://qiita.com/0829/items/a8c98c8f53b2e821ac94
+
+    var snapshot = function () {
+        alert("start test");
+        if (localMediaStream) {
+        
+        //alert(video.width)
+        //alert(video.height)
+        
+        canvas.width = video.width
+        canvas.height = video.height
+        img.width =video.width
+        img.height =video.height
+        
+        alert(canvas.width)
+        
+        
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            document.getElementById('img').src = canvas.toDataURL('image/png');
+            var base64 = canvas.toDataURL('image/png');
+            var base641 = canvas.toDataURL();
+
+            var blob = Base64toBlob(base64);
+            //   alert("171 camera start sava");
+            // alert(blob)
+            // document.getElementById('img').src
+            //document.getElementById('img').src.replace(/^.*,/, '')
+            var data = document.getElementById('img').src.replace(/^.*,/, '')
+            //   alert(data)
+            //    alert("start camera")
+            //google.script.run.postChatwork_light("","start")
+            // google.script.run.firebase("start")
+            <? if(debug==1){ ?>
+            alert("画像キャプチャー開始")
+            <? } ?>
+            google.script.run.savecreateFile(data)//base64)
+
+            //  savecreateFile(data)
+           // alert("save end");
+        }
+//for save by php 
+       // saveSnapshot();
+    }
+
+
+    if (hasGetUserMedia()) {
+        console.log("Media Video test OK");
+    } else {
+        alert("test Flase");
+    }
+
+    window.URL = window.URL || window.webkitURL;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+   // navigator.mediaDevices.getUserMedia({ audio: true, video: true });
+    alert("state")
+    
+    var constraints = { audio: true, video: { width: 1280, height: 720 } };
+
+//navigator.mediaDevices.getUserMedia(constraints)
+alert("test ok")
+    
+    
+navigator.mediaDevices.getUserMedia(constraints)
+.then(function(mediaStream) {
+  //var video = document.querySelector('canvas');
+  video.srcObject = mediaStream;
+  video.onloadedmetadata = function(e) {
+  //  video.play();
+  };
+})
+.catch(function(err) { alert(err+"aaaaaaaaaaaaaa");console.log(err.name + ": " + err.message); }); // always check for errors at the end.
+
+alert("ok 2")
+   /* 
+    navigator.getUserMedia({
+            video: true
+        }
+
+        ,
+        function (stream) {
+            //      video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
+            localMediaStream = stream;
+        }
+
+        ,
+        onFailSoHard);
+*/
+
+    /*   var canvas = $('#canvas');
+      var context = canvas[1].getContext('2d');
+    */
+
+    $("#canvas").on('mousemove',
+        function (e) {
+            if (e.buttons === 1) {
+                var x = e.pageX - $("#canvas").offset().left,
+                    y = e.pageY - $("#canvas").offset().top,
+                    color = $('#color').val() || '#000',
+                    weight = $('#weight').val() || 10; //alert(x)
+                //alert(y)
+                ctx.fillStyle = color;
+                ctx.fillRect(x, y, weight, weight);
+            }
+        }
+    );
+
+    $('#clear').on('click',
+        function () {
+            ctx.clearRect(0, 0, 800, 400);
+        }
+    );
+
+
+    $("#capture").click(function () {
+    alert("snap shot start")
+            snapshot();
+            document.getElementById('capture_images').style.visibility = "visible";
+        }
+    );
+    $("#stop").click(function () {
+            localMediaStream.stop();
+        }
+    );
+    $("video").click(function () {
+            snapshot();
+            document.getElementById('capture_images').style.visibility = "visible";
+        }
+    );
+    
+     $("imgSize").click(function () {
+            //snapshot();
+            alert(img.width)
+            alert(img.height)
+            document.getElementById('capture_images').style.visibility = "visible";
+        }
+    );
+
+/*
+ * スナップショットの取得
+ */
+
+    var saveSnapshot = function () {
+        var hostUrl = 'https://bpms.bpmboxes.com/MachineL/webcam/save.php'; // 繝��繧ｿ騾∽ｿ｡蜈�
+        // Send the value to the server and handle the response.
+        //alert("snap shot is this" + document.getElementById('img').src)
+        var element = document.getElementById("video");
+        var width = element.videoWidth;
+		var height = element.videoHeight;
+        
+       // alert(width);
+      //  alert(height);
+        google.script.run
+            .withSuccessHandler(
+                function (msg, element) {
+                    alert("success 画像の保存完了");
+                })
+            .withFailureHandler(
+                function (msg, element) {
+                    alert(msg)
+                    // Respond to failure conditions here.
+                    //     showStatus(msg, 'error');
+                    //   element.disabled = false;
+                })
+            .withUserObject(this)
+            .postCamera(document.getElementById('img').src);
+
+        //postCamera(document.getElementById('img').src)
+        $.ajax({
+            url: hostUrl,
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                img: document.getElementById('img').src
+            },
+            timeout: 10000,
+            success: function (data) {
+                // 謌仙粥
+                alert("ok");
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown); // 螟ｱ謨�
+                alert("error");
+                alert(XMLHttpRequest);
+            }
+        });
+    }
+						</script>
+						<link rel="stylesheet" type="text/css" href="https://cdn.dhtmlx.com/edge/dhtmlx.css">
+						<script src="https://cdn.dhtmlx.com/edge/dhtmlx.js"></script>
+
+						<?!= //requireE('public/js/dhtmlx'); ?>
+
+	</body>
+
+	</html>

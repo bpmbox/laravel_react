@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation renders NavHeaderSpaceSwitcher without crash 1`] = `
+<View
+  style={
+    Object {
+      "marginHorizontal": 17,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+        undefined,
+      ]
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#CCCCCC"
+      hidesWhenStopped={true}
+      size="small"
+    />
+  </View>
+</View>
+`;

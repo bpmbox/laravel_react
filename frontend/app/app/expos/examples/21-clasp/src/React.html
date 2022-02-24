@@ -1,0 +1,96 @@
+<script type="text/babel">
+	const {connect, Provider} = ReactRedux; // import {connect, Provider} from 'react-redux';
+  const {createStore, compose,combineReducers} = Redux; // import {createStore} from 'redux';
+  const {Component} = React; // import {Component} from 'react';
+  //const {map} = from 'lodash'
+const countReducer = (state = 0, action) => {
+    switch (action.type) {
+        case "INCR":
+            return state + 1;
+        case "DECR":
+            return state - 1;
+        default:
+            return state;
+    }
+};
+const reducer = combineReducers({
+    count: countReducer
+});
+const store = createStore(reducer);
+
+const Counter = (props) => (
+    <div>
+        <button onClick={() => props.dispatch({type: "INCR"})}>+</button>
+        <button onClick={() => props.dispatch({type: "DECR"})}>-</button>
+        <br />Counter: {props.count}
+    </div>
+)
+
+function mapStateToProps(state) {
+    return {count: state.count};
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        onClickIncr: () => dispatch({type: "INCR"}),
+        onClickDecr: () => dispatch({type: "DECR"}),
+    };
+}
+//const reducer = combineReducers({
+//    count: countReducer,
+//    router: routerReducer
+//});
+
+connect(mapStateToProps,mapDispatchToProps)(Counter);
+
+let {Router, Route, Link, browserHistory} = window.ReactRouter;
+
+class Index extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello React!</h1>
+        <ul>
+          <li><Link to='/about'>About</Link></li>
+          <li><Link to='/article'>Article</Link></li>
+        </ul>
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
+class About extends React.Component {
+  render() {
+    return (
+      <div>About</div>
+    );
+  }
+}
+
+class Article extends React.Component {
+  render() {
+    return (
+      <div>Article</div>
+    );
+  }
+}
+/*
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path='/' component={Index}>
+      <Route path='about' component={About}/>
+      <Route path='article' component={Article}/>
+    </Route>
+  </Router>
+  ), document.getElementById('content')
+);
+*/
+
+  ReactDOM.render( 
+  <Provider store={store}>
+    <ReactContainer />
+    </Provider>, document.getElementById('root')
+  );
+  
+</script>

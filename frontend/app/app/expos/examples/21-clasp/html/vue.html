@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>拡張サイドバー</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/buefy@0.7.1/dist/buefy.min.css">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+  <style>
+    html {
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <b-tabs v-model="activeTab" position="is-centered">
+      <b-tab-item icon="format-paint" label="着色">
+        <a v-for="(btn, index) in buttons" @click="fillActiveSpreadsheetCell(index)" :key="index"
+          :class="btnClass(index)" :style="{'background-color': btn.color}">
+          {{btn.name}}
+        </a>
+
+
+
+
+      </b-tab-item>
+
+      <b-tab-item icon="message-text" label="メモ">
+        <div class="colunm">
+          <b-field label="表題">
+            <b-select v-model="form.title" expanded required placeholder="title">
+              <option>確認をお願いします</option>
+              <option>折り返し連絡ください</option>
+              <option>至急対応をしてください</option>
+              <option>ご意見をください</option>
+            </b-select>
+          </b-field>
+          <b-field label="メッセージ">
+            <b-input v-model="form.message" expanded required type="textarea" placeholder="Message"></b-input>
+          </b-field>
+          <button class="button is-info is-large is-fullwidth" :disabled="!isSubmittable" @click="submitNote">
+                        <b-icon icon="comment-text" size="is-small"></b-icon>
+                        <span>選択セルにメモる</span>
+                    </button>
+          sssssssssssssssssssssssssss
+          <p>{{ message }}</p>
+          <b-field label="メッセージ">
+            <b-input v-model="message" expanded required type="textarea" placeholder="Message"></b-input>
+          </b-field>
+          <p><input v-model="message"></p>
+        </div>
+      </b-tab-item>
+
+      <b-tab-item icon="calendar" label="日付">
+        <b-datepicker inline v-model="date" :day-names="['日','月','火','水','木','金','土']"
+          :month-names="['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']">
+        </b-datepicker>
+        <button class="button is-info is-large is-fullwidth" @click="submitDate">
+              <b-icon icon="pencil" size="is-small"></b-icon>
+                <span>{{formatDate}}</span>
+              </button>
+      </b-tab-item>
+      <b-tab-item icon="message-text" label="メeモ">
+        <div>
+
+          <button type="submit" v-on:click="createTodo()">タスク作成</button>
+        </div>
+        <ul>
+          <li><button type="submit" v-on:click="showTodoType = 'all'">すべて</button></li>
+          <li><button type="submit" v-on:click="showTodoType = 'active'">未完タスク一覧</button></li>
+          <li><button type="submit" v-on:click="showTodoType = 'complete'">完了タスク一覧</button></li>
+        </ul>
+
+
+      </b-tab-item>
+    </b-tabs>
+  </div>
+</body>
+
+<script src="https://jp.vuejs.org/js/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/buefy@0.7.1/dist/buefy.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCsOjFyAAuFr1CITcnufG-GpZBKpLgUP90",
+    authDomain: "rpa999-56929.firebaseapp.com",
+    databaseURL: "https://rpa999-56929.firebaseio.com",
+    projectId: "rpa999-56929",
+    storageBucket: "rpa999-56929.appspot.com",
+    messagingSenderId: "155298248089",
+    appId: "1:155298248089:web:e25d64dc9f5370c4"
+  };
+
+firebase.initializeApp(config);
+     
+            // データベースの参照を準備
+    //        var messagesRef = firebase.database().ref().child('messages')
+    //        var messageFeed = document.getElementById("message-feed");
+            
+            
+ //             messagesRef.on('child_changed', function(data) {
+//              alert("data changed")
+      //  alert(data.key)
+      //alert(JSON.stringify(data.val()));
+  //      var msg = data.val();
+        //alert(msg.name)
+        //alert(msg.body)
+  //      var lg = JSON.stringify(msg)
+  //      alert(lg)
+      //     var msg = snapshot.val();
+     //           $('<li>').text(""+msg.name + ': ' + msg.body).prependTo('#messages');
+    //        $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body+ '</h3><p>Today</p></div>');
+  //    messageFeed.scrollTop = messageFeed.scrollHeight;
+ //          timedResponse();
+//location.reload()
+//alert(lg)
+      //  alert(lg)
+            //setCommentValues(postElement, data.key, data.val().text, data.val().author);
+        //       $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+          //     $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>ｓ' + msg.name + ': ' + msg.body + '</h3><p>Today</p></div>');
+        
+     //   timedResponse();
+//        });
+       
+            
+        
+            // 既存メッセージを表示
+   //         messagesRef.on('child_added', function(snapshot) {
+    //            var msg = snapshot.val();
+    //            $('<li>').text(""+msg.name + ': ' + msg.body).prependTo('#messages');
+     //       $('#message-feed').append('<div class="message message-from"><div class="message-name"><h1>BPMCHAT success 272 </h1></div><div class="message-body"><p><h3>' + msg.name + ': ' + msg.body+ '</h3><p>Today</p></div>');
+     // messageFeed.scrollTop = messageFeed.scrollHeight;
+     //      timedResponse();
+            
+      //      });
+            
+        
+        //    $('#send').click(function() {
+                // 新規メッセージを投稿
+          //       var messagesRef = firebase.database().ref().child('messages')
+          //      messagesRef.push({
+            //        name: $('#name').val(),
+             //       body: $('#message').val()
+             //   });
+             //   alert($('#message').val())
+             //  google.script.run.execGAS(1,$('#message').val())
+         //   });
+   
+
+
+
+
+
+
+    Vue.use(Buefy.default)
+    var app = new Vue({
+        el: '#app',
+
+        data: {
+            activeTab: 0,
+            buttons: [
+                { color: '#FFFFFF', font: 'has-text-black', name: "クリア - reset" },
+                { color: '#ff0000', font: 'has-text-white', name: "赤 - red" },
+                { color: '#0000ff', font: 'has-text-white', name: "青 - blue" },
+                { color: '#00ff00', font: 'has-text-black', name: "緑 - green" },
+                { color: '#808080', font: 'has-text-white', name: "灰色 - gray" },
+                { color: '#000000', font: 'has-text-white', name: "黒 - black" },
+            ],
+            form: {
+                title: '',
+                message: ''
+            },
+            date: new Date(),
+            message: 'Hello Vue.js!',
+               todos: [
+      { text: 'Learn JavaScript',text: 'Learn JavaScript' },
+      { text: 'Learn Vue.js' },
+      { text: 'Build Somssssssssssssething Awesome' }
+    ]
+       },
+       created: function() {
+    this.database = firebase.database();
+    //this.todosRef = this.database().ref.on('child_changed',.child('messages')
+   // var messagesRef = firebase.database().ref().child('messages')
+        // データベースの参照を準備
+     //       var messagesRef = firebase.database().ref().child('messages')
+      //      var messageFeed = document.getElementById("message-feed");
+      
+
+    var _this = this;
+    this.database.ref().on('child_changed', function(snapshot) {
+    alert("from vue test from firebase")
+    app.message = "from vue test from firebase"
+      //_this.todos = snapshot.val(); // データに変化が起きたときに再取得する
+    });
+  },
+        computed: {
+            isSubmittable() {
+                if (!this.form.title.length) return false;
+                if (!this.form.message.length) return false;
+                return true;
+            },
+            formatDate() {
+              return moment(this.date).format('YYYY-MM-DD');
+            }
+        },
+        methods: {
+            toast(message) {
+                this.$toast.open({
+                    message: message,
+                    type: 'is-success'
+                });
+            },
+
+            btnClass(index) {
+                const result = {
+                    'button': true,
+                    'is-large': true,
+                    'is-fullwidth': true,
+                };
+                result[this.buttons[index].font] = true;
+
+                return result;
+            },
+
+            fillActiveSpreadsheetCell(index) {
+                var payload = {
+                  bgcolor: this.buttons[index].color,
+                  fontcolor: (this.buttons[index].font == 'has-text-white') ? '#ffffff' : '#000000'
+                };
+
+                google.script.run.setCell(JSON.stringify(payload));
+            },
+
+            submitNote() {
+              var message = '表題：' + this.form.title + '\n投稿日：' + moment(this.date).format('YYYY-MM-DD') + '\n\n' + this.form.message;
+              var payload = {
+                note: message
+              };
+              google.script.run.setCell(JSON.stringify(payload));
+              this.toast('セルにメモを書き込みました');
+              this.form.title = '';
+              this.form.message = '';
+            },
+
+            submitDate() {
+              var payload = {
+                value: moment(this.date).format('YYYY-MM-DD')
+              };
+              google.script.run.setCell(JSON.stringify(payload));
+            },
+        }
+    })
+</script>

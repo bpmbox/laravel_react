@@ -1,0 +1,1795 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders empty page 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    center={true}
+    contentContainerStyle={Array []}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    style={
+      Array [
+        undefined,
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+        Object {
+          "alignItems": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "marginHorizontal": 48,
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={false}
+          style={
+            Object {
+              "color": "#EAEAEA",
+              "fontFamily": "GenEiGothicP-B",
+              "fontSize": 20.1875,
+              "fontWeight": "700",
+              "lineHeight": 30.28125,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "center",
+            }
+          }
+        >
+          400
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 44,
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "marginHorizontal": 48,
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 14.875,
+              "fontWeight": "400",
+              "lineHeight": 22.3125,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "center",
+            }
+          }
+        >
+          This page has no content.
+        </Text>
+      </View>
+    </View>
+  </View>
+</SafeAreaView>
+`;
+
+exports[`renders page with User Picker block 1`] = `
+<ScrollView
+  data={
+    Array [
+      Object {
+        "attrs": Object {
+          "label": "Participants",
+        },
+        "type": "userpicker",
+        "value": Object {
+          "userGroups": Array [
+            Object {
+              "id": "83218ac34c1834c26781fe4bde918ee4",
+              "name": "Product Managers",
+            },
+            Object {
+              "id": "83218ac34c1834c26781fe4bde918ee5",
+              "name": "Developers",
+            },
+            Object {
+              "id": "83218ac34c1834c26781fe4bde918ee6",
+              "name": "Q/A",
+            },
+          ],
+          "users": Array [
+            Object {
+              "avatarUrl": "https://www.iconninja.com/files/830/684/873/avatar-user-woman-girl-female-person-icon.png",
+              "email": "mstepper@email.com",
+              "familyName": "Stepper",
+              "givenName": "Marty",
+              "id": "8b1a9953c4611296a827abf8c47804d6",
+            },
+            Object {
+              "avatarUrl": "https://www.iconninja.com/files/830/684/873/avatar-user-woman-girl-female-person-icon.png",
+              "email": "jparker@yahoo.com",
+              "familyName": "Parker",
+              "givenName": "Joan",
+              "id": "8b1a9953c4611296a827abf8c47804d7",
+            },
+            Object {
+              "avatarUrl": "https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/128x128/shadow/businessman2.png",
+              "email": "jcvd@vandamme.org",
+              "familyName": "VanDamme",
+              "givenName": "Claude",
+              "id": "8b1a9953c4611296a827abf8c47804d8",
+            },
+            Object {
+              "avatarUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Michael_J._Fox_as_Marty_McFly_in_Back_to_the_Future%2C_1985.jpg/220px-Michael_J._Fox_as_Marty_McFly_in_Back_to_the_Future%2C_1985.jpg",
+              "email": "mmcfly@msn.com",
+              "familyName": "McFly",
+              "givenName": "Marty",
+              "id": "8b1a9953c4611296a827abf8c47804d9",
+            },
+          ],
+        },
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  keyboardDismissMode="on-drag"
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "paddingBottom": 100,
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 5,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 5,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={false}
+                style={Object {}}
+              >
+                <Text
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 14.875,
+                        "lineHeight": 22.3125,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Participants
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      padding={16}
+      style={
+        Array [
+          Object {},
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+          undefined,
+          Object {},
+          Object {
+            "flexWrap": "wrap",
+            "marginVertical": 10,
+          },
+          Object {
+            "paddingHorizontal": 16,
+            "paddingVertical": 16,
+          },
+        ]
+      }
+      wrap={true}
+    >
+      <TouchableOpacity
+        activeOpacity={0.2}
+        disabled={false}
+        onPress={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#F6F6F6",
+            "borderRadius": 7.4375,
+            "marginEnd": 10,
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 14.875,
+              "fontWeight": "700",
+            }
+          }
+        >
+          + Add People
+        </Text>
+      </TouchableOpacity>
+    </View>
+  </View>
+</ScrollView>
+`;
+
+exports[`renders page with gallery of components 1`] = `
+<ScrollView
+  data={
+    Array [
+      Object {
+        "type": "heading2",
+        "value": "Input",
+      },
+      Object {
+        "attrs": Object {
+          "placeholder": "Placeholder text...",
+        },
+        "type": "input",
+        "value": "Hello",
+      },
+      Object {
+        "attrs": Object {
+          "action": "submit",
+        },
+        "type": "button",
+        "value": "Submit",
+      },
+      Object {
+        "type": "heading1",
+        "value": "Basic",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Text",
+      },
+      Object {
+        "type": "text",
+        "value": "Plain text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      },
+      Object {
+        "type": "text",
+        "value": "**Text** *with* \`inline code\` and [links](https://withtree.com)",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Links",
+      },
+      Object {
+        "attrs": Object {
+          "pageId": "123456",
+        },
+        "type": "link",
+        "value": "This is a link",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Callout",
+      },
+      Object {
+        "type": "callout",
+        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      },
+      Object {
+        "attrs": Object {
+          "type": "success",
+        },
+        "type": "callout",
+        "value": "Success",
+      },
+      Object {
+        "attrs": Object {
+          "type": "warning",
+        },
+        "type": "callout",
+        "value": "Warning",
+      },
+      Object {
+        "attrs": Object {
+          "type": "error",
+        },
+        "type": "callout",
+        "value": "Error",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Divider",
+      },
+      Object {
+        "type": "divider",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Quote",
+      },
+      Object {
+        "type": "quote",
+        "value": "Lorem ipsum dolor sit amet.",
+      },
+      Object {
+        "type": "quote",
+        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+      },
+      Object {
+        "type": "heading2",
+        "value": "BulletedList",
+      },
+      Object {
+        "type": "bulletedlist",
+        "value": Array [
+          "Item 1",
+          "Item 2",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi est sapien, gravida id nulla nec, sodales tristique metus. Sed euismod enim vel velit commodo, nec tristique mi tempus. Fusce aliquet quis erat non sollicitudin.",
+        ],
+      },
+      Object {
+        "type": "heading2",
+        "value": "NumberedList",
+      },
+      Object {
+        "type": "numberedlist",
+        "value": Array [
+          "Item 1",
+          "Item 2",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi est sapien, gravida id nulla nec, sodales tristique metus. Sed euismod enim vel velit commodo, nec tristique mi tempus. Fusce aliquet quis erat non sollicitudin.",
+          "Item 4",
+          "Item 5",
+          "Item 6",
+          "Item 7",
+          "Item 8",
+          "Item 9",
+          "Item 10",
+          "Item 11",
+          "Item 12",
+        ],
+      },
+      Object {
+        "type": "heading2",
+        "value": "Code",
+      },
+      Object {
+        "attrs": Object {
+          "lang": "js",
+        },
+        "type": "code",
+        "value": "const App = () => {
+    const listItems = [
+        \\"Item 1\\",
+        \\"Item 2\\",
+        \\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\\"
+    ];
+};
+export default App;",
+      },
+      Object {
+        "type": "text",
+        "value": "\`\`\` js
+// this is JS code in a Text block
+var foo = function (bar) {
+    return bar++;
+};
+
+console.log(foo(5));
+\`\`\`",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Heading",
+      },
+      Object {
+        "type": "heading1",
+        "value": "Heading1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Heading2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      },
+      Object {
+        "type": "heading3",
+        "value": "Heading3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
+      },
+      Object {
+        "type": "heading1",
+        "value": "Embed",
+      },
+      Object {
+        "type": "heading2",
+        "value": "File",
+      },
+      Object {
+        "type": "file",
+        "value": "http://web.stanford.edu/class/archive/cs/cs106b/cs106b.1198/lectures/Lecture2/Lecture2.pdf",
+      },
+      Object {
+        "type": "file",
+        "value": "https://d33wubrfki0l68.cloudfront.net/6d8aec4f2bd015cca1b4a170c57c1a93d16790d9/a88d5/static/images/external/articles/318d0a2b81afef4a5e27413e9cda3b0e@2x.jpg",
+      },
+      Object {
+        "type": "file",
+        "value": "http://homestarrunner.com/index.html",
+      },
+      Object {
+        "type": "heading2",
+        "value": "Image",
+      },
+      Object {
+        "attrs": Object {
+          "caption": "ORIGINAL",
+        },
+        "type": "image",
+        "value": "https://d33wubrfki0l68.cloudfront.net/223dfe9f9d78da463ca4a2e46c41bbc18eea16b6/cfdba/static/images/external/articles/1d46669eac4f923d62473f669a0ae0fa@2x.jpg",
+      },
+      Object {
+        "attrs": Object {
+          "caption": "SQUARE Aviva Investors",
+          "format": "square",
+        },
+        "type": "image",
+        "value": "https://d33wubrfki0l68.cloudfront.net/59398e9d0568c9dfd45e605842bef35cc9695681/c8ceb/static/images/external/articles/d888770a5c275f477b696e61d799b608@2x.jpg",
+      },
+      Object {
+        "attrs": Object {
+          "caption": "LANDSCAPE The Tree House Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+          "format": "landscape",
+        },
+        "type": "image",
+        "value": "https://d33wubrfki0l68.cloudfront.net/4027100817123b98530af125f8a41cad03f45890/4ee35/static/images/external/articles/518d9d50544c6470675601c167124db3@2x.jpg",
+      },
+      Object {
+        "attrs": Object {
+          "caption": "W/H Aviva Investors",
+          "height": 50,
+          "width": 120,
+        },
+        "type": "image",
+        "value": "https://d33wubrfki0l68.cloudfront.net/59398e9d0568c9dfd45e605842bef35cc9695681/c8ceb/static/images/external/articles/d888770a5c275f477b696e61d799b608@2x.jpg",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  keyboardDismissMode="on-drag"
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "paddingBottom": 100,
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 38.25,
+                        "lineHeight": 57.375,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Input
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 44,
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#EAEAEA",
+            "bottom": 0,
+            "height": 0.5,
+            "left": 16,
+            "position": "absolute",
+            "right": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          selectable={false}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 17,
+              "fontWeight": "400",
+              "lineHeight": 25.5,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 4,
+              "textAlign": "left",
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+      <TextInput
+        allowFontScaling={true}
+        autoCapitalize={null}
+        autoCorrect={false}
+        editable={true}
+        keyboardType="default"
+        multiline={false}
+        numberOfLines={1}
+        onChangeText={[Function]}
+        placeholder="Placeholder text..."
+        placeholderTextColor="#CCCCCC"
+        rejectResponderTermination={true}
+        returnKeyType="next"
+        secureTextEntry={false}
+        selectionColor="#0066FF"
+        spellCheck={false}
+        style={
+          Object {
+            "color": "#000000",
+            "fontFamily": "GenEiGothicP-SL",
+            "fontSize": 17,
+            "fontWeight": "400",
+            "minHeight": 44,
+            "paddingBottom": 0,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 0,
+            "width": "100%",
+          }
+        }
+        textAlignVertical="top"
+        underlineColorAndroid="transparent"
+        value="Hello"
+      />
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 56,
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        size={1}
+        style={
+          Object {
+            "paddingHorizontal": 16,
+            "width": "100%",
+          }
+        }
+        title="Submit"
+      >
+        <TouchableOpacity
+          activeOpacity={0.9}
+          hoverStyle={
+            Object {
+              "borderRadius": 7.4375,
+              "opacity": 1,
+              "shadowColor": "#000000",
+              "shadowOffset": Object {
+                "height": 10,
+                "width": 0,
+              },
+              "shadowOpacity": 0.1,
+              "shadowRadius": 20,
+            }
+          }
+          onPress={[Function]}
+          onPressIn={[Function]}
+          onPressOut={[Function]}
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "#0066FF",
+                "borderColor": "#00000000",
+                "borderRadius": 7.4375,
+                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "GenEiGothicP-R",
+                "fontSize": 17,
+                "fontWeight": "500",
+                "lineHeight": 42.5,
+                "overflow": "hidden",
+                "paddingHorizontal": 32,
+                "textAlign": "center",
+                "width": "100%",
+              }
+            }
+          >
+            Submit
+          </Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 24,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 51,
+                        "lineHeight": 61.199999999999996,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Basic
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 38.25,
+                        "lineHeight": 57.375,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Text
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Plain text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 0,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Object {
+                      "fontFamily": "GenEiGothicP-B",
+                      "fontWeight": "bold",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={true}
+                    style={
+                      Array [
+                        Object {
+                          "fontFamily": "GenEiGothicP-B",
+                          "fontWeight": "bold",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "left",
+                        },
+                      ]
+                    }
+                  >
+                    Text
+                  </Text>
+                </Text>
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                   
+                </Text>
+                <Text
+                  selectable={true}
+                  style={
+                    Object {
+                      "fontStyle": "italic",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={true}
+                    style={
+                      Array [
+                        Object {
+                          "fontStyle": "italic",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "left",
+                        },
+                      ]
+                    }
+                  >
+                    with
+                  </Text>
+                </Text>
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                   
+                </Text>
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "backgroundColor": "#F6F6F6",
+                        "borderColor": "#CCCCCC",
+                        "borderRadius": 4,
+                        "borderWidth": 1,
+                        "color": "#EE0077",
+                        "fontFamily": "FiraCode-Regular",
+                        "fontSize": 15,
+                        "fontWeight": "400",
+                        "marginLeft": 3,
+                        "marginRight": 3,
+                        "opacity": 1,
+                        "padding": 10,
+                        "paddingBottom": 3,
+                        "paddingLeft": 5,
+                        "paddingRight": 5,
+                        "paddingTop": 3,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  inline code
+                </Text>
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-SL",
+                        "fontSize": 17,
+                        "lineHeight": 25.5,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                   and 
+                </Text>
+                <Text
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  <Text
+                    selectable={true}
+                    style={
+                      Array [
+                        Object {
+                          "textDecorationLine": "underline",
+                        },
+                        Object {
+                          "color": "#000000",
+                          "fontFamily": "GenEiGothicP-SL",
+                          "fontSize": 17,
+                          "lineHeight": 25.5,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "textAlign": "left",
+                        },
+                      ]
+                    }
+                  >
+                    links
+                  </Text>
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 38.25,
+                        "lineHeight": 57.375,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Links
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <TouchableOpacity
+      activeOpacity={0.95}
+      disabled={false}
+      onPress={[Function]}
+      onPressIn={[Function]}
+      onPressOut={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "height": 44,
+            "maxWidth": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "flex": 1,
+              "flexDirection": "column",
+              "flexGrow": 1,
+              "justifyContent": "center",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Text
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            selectable={true}
+            style={
+              Object {
+                "color": "#0066FF",
+                "fontFamily": "GenEiGothicP-SL",
+                "fontSize": 20.1875,
+                "fontWeight": "400",
+                "lineHeight": 30.28125,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "paddingBottom": 4,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 4,
+                "textAlign": "left",
+              }
+            }
+          >
+            This is a link
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        >
+          <View
+            style={Object {}}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "flexWrap": "wrap",
+                  "justifyContent": "flex-start",
+                  "marginBottom": 10,
+                  "marginTop": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                selectable={true}
+                style={Object {}}
+              >
+                <Text
+                  selectable={true}
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "GenEiGothicP-B",
+                        "fontSize": 38.25,
+                        "lineHeight": 57.375,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "textAlign": "left",
+                      },
+                    ]
+                  }
+                >
+                  Callout
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "height": 0,
+      }
+    }
+  />
+</ScrollView>
+`;
+
+exports[`renders page with quote block 1`] = `
+<ScrollView
+  data={
+    Array [
+      Object {
+        "type": "quote",
+        "value": "This is a quote",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  keyboardDismissMode="on-drag"
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={2}
+  onLayout={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "paddingBottom": 100,
+    }
+  }
+  updateCellsBatchingPeriod={50}
+  viewabilityConfigCallbackPairs={Array []}
+  windowSize={21}
+>
+  <View
+    onLayout={[Function]}
+    style={null}
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "maxWidth": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "borderRadius": 2,
+            "bottom": 14,
+            "left": 16,
+            "position": "absolute",
+            "top": 14,
+            "width": 3,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "flex": 1,
+            "flexDirection": "column",
+            "flexGrow": 1,
+            "justifyContent": "center",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Text
+          selectable={true}
+          style={
+            Object {
+              "color": "#000000",
+              "fontFamily": "GenEiGothicP-SL",
+              "fontSize": 20.1875,
+              "fontWeight": "400",
+              "lineHeight": 30.28125,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "paddingBottom": 24,
+              "paddingLeft": 40,
+              "paddingRight": 16,
+              "paddingTop": 24,
+              "textAlign": "left",
+            }
+          }
+        >
+          This is a quote
+        </Text>
+      </View>
+    </View>
+  </View>
+</ScrollView>
+`;
